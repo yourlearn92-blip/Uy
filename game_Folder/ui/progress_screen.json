@@ -11,7 +11,6 @@
 
   "progress_screen@common.base_screen": {
     "is_showing_menu": true,
-    "should_steal_mouse": true,
     "$screen_bg_content": "progress.progress_screen_bg",
     "controls": [ 
       { "content@progress.progress_screen_content": { "layer": 10 } } 

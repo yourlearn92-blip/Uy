@@ -36,7 +36,6 @@
 
   "loading_screen@common.base_screen": {
     "is_showing_menu": true,
-    "should_steal_mouse": true,
     "force_render_below": true,
     "$screen_bg_content": "loading.loading_screen_bg",
     "$screen_content": "loading.loading_screen_content"
