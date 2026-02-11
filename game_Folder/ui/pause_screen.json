@@ -41,6 +41,7 @@
   },
 
   "button_template@common_buttons.simple_button": {
+    "size": "$button_size",
     "button_mappings": [
       {
         "from_button_id": "button.menu_select",
@@ -56,7 +57,7 @@
   },
 
   "pause_screen@common.base_screen": {
-    "$screen_bg_content": "common.empty_panel",
+    "$screen_bg_content": "common_buttons.empty_panel",
     "$screen_content": "pause.pause_screen_content"
   }
 }

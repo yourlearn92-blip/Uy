@@ -19,7 +19,16 @@
 
   "progress_screen_content": {
     "type": "panel",
+    "size": [ "100%", "100%" ],
     "controls": [
+      {
+        "cursor_blocker": {
+          "type": "panel",
+          "size": [ "100%", "100%" ],
+          "layer": 99,
+          "alpha": 0
+        }
+      },
       {
         "loading_label": {
           "type": "label",
