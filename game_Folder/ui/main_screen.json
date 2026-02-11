@@ -1,0 +1,137 @@
+{
+  "namespace": "main_menu",
+
+  // --- 1. BACKGROUND (Empty to allow panorama to show) ---
+  "wolf_menu_background": {
+    "type": "panel"
+  },
+
+  // --- 2. THE BUTTON STACK (Left Side) ---
+  "main_buttons_stack_panel": {
+    "type": "stack_panel",
+    "size": [ 120, "100%" ],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "offset": [ 0, 20 ],
+    "controls": [
+      { "fill": { "type": "panel", "size": [ "100%", "fill" ] } },
+      { "r1@main_menu.btn_row": { "$button_text": "menu.play", "$pressed_button_name": "button.menu_play" } },
+      { "p1": { "type": "panel", "size": [ "100%", 2 ] } },
+      { "r2@main_menu.btn_row": { "$button_text": "menu.settings", "$pressed_button_name": "button.menu_settings" } },
+      { "p2": { "type": "panel", "size": [ "100%", 2 ] } },
+      { "r3@main_menu.btn_row": { "$button_text": "Realms", "$pressed_button_name": "button.menu_realms" } },
+      { "p3": { "type": "panel", "size": [ "100%", 2 ] } },
+      { "r4@main_menu.btn_row": { "$button_text": "Marketplace", "$pressed_button_name": "button.menu_store" } },
+      { "fill2": { "type": "panel", "size": [ "100%", "fill" ] } }
+    ]
+  },
+
+  "btn_row": {
+    "type": "panel",
+    "size": [ "100%", 30 ],
+    "controls": [
+      { 
+        "b@common_buttons.simple_button": { 
+          "size": [ "100%", "100%" ],
+          "$button_text": "$button_text"
+        } 
+      }
+    ]
+  },
+
+  // --- 3. MAIN CONTENT ASSEMBLY ---
+  "main_menu_content": {
+    "type": "panel",
+    "controls": [
+      { "logo@main_menu.title_logo": { "layer": 5 } },
+      { "main_menu@main_menu.main_buttons_stack_panel": { "layer": 5 } },
+      {
+        "tag_container": {
+          "type": "panel",
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "offset": [ -10, 10 ],
+          "size": [ 120, 20 ],
+          "controls": [
+            {
+              "name_tag": {
+                "type": "label",
+                "text": "#gamertag_label",
+                "color": [ 1, 1, 1 ],
+                "shadow": true,
+                "bindings": [ { "binding_name": "#gamertag_label" } ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "dr_container": {
+          "type": "panel",
+          "anchor_from": "bottom_right",
+          "anchor_to": "bottom_right",
+          "offset": [ -10, -35 ],
+          "size": [ 120, 30 ],
+          "controls": [
+            {
+              "dr_btn@common_buttons.simple_button": {
+                "$button_text": "Dressing Room",
+                "$pressed_button_name": "button.menu_dressing_room" 
+              }
+            }
+          ]
+        }
+      },
+      // Version and Copyright placed in corners
+      { "version_label@main_menu.version_label": { "layer": 5 } },
+      { "copyright_label@main_menu.copyright_label": { "layer": 5 } }
+    ]
+  },
+
+  "main_menu_screen@common.base_screen": {
+    "$screen_bg_content": "main_menu.wolf_menu_background",
+    "$screen_content": "main_menu.main_menu_content"
+  },
+
+  // --- 4. LOGO, VERSION, & COPYRIGHT ---
+  "title_logo": {
+    "type": "panel",
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "layer": 33,
+    "size": [ "50%", 100 ],
+    "offset": [ 0, -10 ],
+    "controls": [
+      {
+        "title_image": {
+          "type": "image",
+          "anchor_from": "center",
+          "anchor_to": "center", 
+          "size": [ "100%", "100%" ],
+          "texture": "textures/gui/client/title_logo" 
+        }
+      }
+    ]
+  },
+
+  "version_label": {
+    "type": "label",
+    "text": "#version",
+    "anchor_from": "bottom_left",
+    "anchor_to": "bottom_left",
+    "offset": [ 5, -5 ],
+    "color": [ 1.0, 1.0, 1.0 ],
+    "shadow": true,
+    "bindings": [ { "binding_name": "#version" } ]
+  },
+
+  "copyright_label": {
+    "type": "label",
+    "text": "Wolf Client | Noir Edition",
+    "anchor_from": "bottom_right",
+    "anchor_to": "bottom_right",
+    "offset": [ -5, -5 ],
+    "color": [ 0.5, 0.5, 0.5 ],
+    "shadow": true
+  }
+}

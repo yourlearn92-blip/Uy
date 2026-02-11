@@ -1,0 +1,119 @@
+{
+  "namespace": "container",
+
+  // --- 1. QUICK LOOT TOGGLE ---
+  "quick_loot_toggle": {
+    "type": "panel",
+    "size": [ 36, 18 ],
+    "controls": [
+      { 
+        "label": { 
+          "type": "label", 
+          "text": "QUICK", 
+          "size": [ "default", 8 ], 
+          "offset": [ -25, 0 ], 
+          "color": [ 0.6, 0.6, 0.6 ],
+          "shadow": true 
+        } 
+      },
+      { 
+        "bg@common_toggles.light_ui_toggle": {
+          "$button_content": "common.empty_panel",
+          "$toggle_state_binding_name": "#is_quick_loot_on"
+        }
+      }
+    ]
+  },
+
+  // --- 2. LOOT ALL BUTTON ---
+  "loot_all_button@common_buttons.simple_button": {
+    "size": [ "100%-10px", 20 ],
+    "$button_text": "LOOT ALL ITEMS",
+    "$pressed_button_name": "button.inventory_transfer_all", 
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "offset": [ 0, -5 ]
+  },
+  
+  // --- 3. THE CHEST PANEL (The Main Box) ---
+  "chest_panel": {
+    "type": "panel",
+    "size": [ 162, 130 ], 
+    "controls": [
+      {
+        "noir_bg@main_menu.wolf_glass_panel": {
+          "layer": 1,
+          "alpha": 0.5
+        }
+      },
+      {
+        "grid@container.container_grid": { 
+          "layer": 2,
+          "offset": [ 7, 7 ]
+        }
+      },
+      {
+        "loot_all@container.loot_all_button": {
+          "layer": 3,
+          "bindings": [
+            {
+              "binding_name": "#is_quick_loot_on",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  
+  // --- 4. TOP BAR (Close & Toggle) ---
+  "top_bar": {
+    "type": "panel",
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "size": [ 100, 30 ],
+    "offset": [ -5, 5 ],
+    "controls": [
+      {
+        "stack": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [ "100%c", "100%" ],
+          "controls": [
+            { "quick_loot@container.quick_loot_toggle": {} },
+            { "spacer": { "type": "panel", "size": [ 10, "100%" ] } },
+            { 
+              "close_button@common.close_button": { 
+                "size": [ 20, 20 ]
+              } 
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  // --- 5. MAIN SCREEN ASSEMBLY ---
+  "container_screen_content": {
+    "type": "panel",
+    "controls": [
+      { 
+        "chest_grid@container.chest_panel": { 
+          "layer": 5, 
+          "anchor_from": "center", 
+          "anchor_to": "center" 
+        } 
+      },
+      { 
+        "header_controls@container.top_bar": { 
+          "layer": 10 
+        } 
+      }
+    ]
+  },
+
+  "container_screen@common.base_screen": {
+    "$screen_bg_content": "main_menu.wolf_glass_panel",
+    "$screen_content": "container.container_screen_content"
+  }
+}

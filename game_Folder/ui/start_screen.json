@@ -1,0 +1,8 @@
+{
+  "namespace": "start",
+
+  "start_screen@main_menu.main_menu_screen": {
+    "$screen_bg_content": "main_menu.wolf_menu_background",
+    "$screen_content": "main_menu.main_menu_content"
+  }
+}

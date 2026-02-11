@@ -1,0 +1,46 @@
+{
+  // --- WOLF CLIENT BRANDING ---
+  "$background_texture": "textures/ui/BACKGROUND/MENU_BG",
+  "$wolf_logo_size": [ 180, 90 ],
+  "$wolf_glow_alpha": 0.35,
+
+  // --- PRIMARY THEME COLORS ---
+  "$color_cyan": [ 1.0, 1.0, 1.0 ],
+  "$color_cyan_secondary": [ 0.2, 0.2, 0.2 ],
+  "$color_white": [ 1.0, 1.0, 1.0 ],
+  "$color_text_main": [ 1.0, 1.0, 1.0 ],
+  "$color_cyan_secondary": [ 0.0, 0.8, 0.8 ],
+
+  // --- TRANSPARENCY (GLASS EFFECT) ---
+  "$glass_alpha": 0.4,
+  "$screen_background_alpha": "$glass_alpha",
+  "$main_container_alpha": "$glass_alpha",
+  "$container_background_alpha": "$glass_alpha",
+  "$button_text_color": [ 0.9, 0.9, 0.9 ],
+
+  // --- BUTTON TEXTURES & SETTINGS ---
+  "$button_texture_default": "textures/gui/client/btn_default",
+  "$button_texture_hover": "textures/gui/client/btn_hover",
+  "$button_texture_pressed": "textures/gui/client/btn_pressed",
+  "$button_texture_border": "textures/gui/client/btn_border",
+  "$button_nineslice": [ 2, 2, 2, 2 ],
+
+  // --- BUTTON BEHAVIOR ---
+  "$button_alpha_default": 0.3,  // Dim when sitting there
+  "$button_alpha_hover": 0.8,    // Lights up bright cyan on hover
+  "$button_alpha_pressed": 1.0,   // Solid cyan when clicked
+  "$btn_height": 20,
+  "$button_size": [ "100%", "100%" ],
+  "$button_size_small": 27,
+  
+
+  // --- LAYOUT & SPACING ---
+  "$spacing_gap": 4,
+  "$spacing_medium": 8,
+  "$safezone_width": "90%c",
+  "$safezone_height": "90%c",
+
+  // --- HELPER VARIABLES (Needed for common_buttons.json) ---
+  "$button_text": "",
+  "$button_content": "common_buttons.empty_panel"
+}

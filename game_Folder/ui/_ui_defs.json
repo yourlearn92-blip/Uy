@@ -1,0 +1,16 @@
+{
+  "ui_defs": [
+    "ui/_global_variables.json",
+    "ui/common_buttons.json",
+    "ui/main_screen.json",
+    "ui/progress_screen.json",
+    "ui/start_screen.json",
+    "ui/loading_screen.json",
+    "ui/chat_screen.json",
+    "ui/container_screen.json",
+    "ui/brewing_stand_screen.json",
+    "ui/controls_settings.json",
+    "ui/trade_2_screen.json",
+    "ui/trade_2_screen_pocket.json"
+  ]
+}

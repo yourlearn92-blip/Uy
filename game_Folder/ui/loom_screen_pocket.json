@@ -1,0 +1,16 @@
+{
+  "namespace": "loom_pocket",
+
+  "loom_screen_content": {
+    "modifications": [
+      {
+        "control_name": "help_button",
+        "operation": "remove"
+      },
+      {
+        "control_name": "pocket_tab_help_button",
+        "operation": "remove"
+      }
+    ]
+  }
+}

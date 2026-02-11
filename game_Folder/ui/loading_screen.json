@@ -1,0 +1,44 @@
+{
+  "namespace": "loading",
+
+  "loading_screen_bg": {
+    "type": "panel",
+    "controls": [
+      {
+        "black_bg": {
+          "type": "image",
+          "texture": "textures/ui/white",
+          "color": [ 0, 0, 0 ],
+          "size": [ "100%", "100%" ],
+          "layer": 1
+        }
+      }
+    ]
+  },
+
+  "loading_screen_content": {
+    "type": "panel",
+    "layer": 10,
+    "controls": [
+      {
+        "loading_text": {
+          "type": "label",
+          "text": "#loading_text",
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "color": [ 1.0, 1.0, 1.0 ],
+          "shadow": true,
+          "bindings": [ { "binding_name": "#loading_text" } ]
+        }
+      }
+    ]
+  },
+
+  "loading_screen@common.base_screen": {
+    "is_showing_menu": true,
+    "should_steal_mouse": true,
+    "force_render_below": true,
+    "$screen_bg_content": "loading.loading_screen_bg",
+    "$screen_content": "loading.loading_screen_content"
+  }
+}
