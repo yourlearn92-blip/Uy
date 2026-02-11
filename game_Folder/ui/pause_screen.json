@@ -40,8 +40,9 @@
     ]
   },
 
-  "button_template@common_buttons.simple_button": {
-    "size": "$button_size",
+  "button_template": {
+    "type": "button",
+    "size": [ "100%", "100%" ],
     "button_mappings": [
       {
         "from_button_id": "button.menu_select",
@@ -52,6 +53,62 @@
         "from_button_id": "button.menu_ok",
         "to_button_id": "$pressed_button_name",
         "mapping_type": "pressed"
+      }
+    ],
+    "controls": [
+      {
+        "default": {
+          "type": "image",
+          "texture": "$button_texture_default",
+          "nineslice_size": "$button_nineslice",
+          "color": "$color_main",
+          "alpha": "$button_alpha_default",
+          "layer": 10,
+          "size": [ "100%", "100%" ]
+        }
+      },
+      {
+        "hover": {
+          "type": "image",
+          "texture": "$button_texture_hover",
+          "nineslice_size": "$button_nineslice",
+          "color": "$color_main",
+          "alpha": "$button_alpha_hover",
+          "layer": 11,
+          "size": [ "100%", "100%" ]
+        }
+      },
+      {
+        "pressed": {
+          "type": "image",
+          "texture": "$button_texture_pressed",
+          "nineslice_size": "$button_nineslice",
+          "color": "$color_secondary",
+          "alpha": "$button_alpha_pressed",
+          "layer": 12,
+          "size": [ "100%", "100%" ]
+        }
+      },
+      {
+        "border": {
+          "type": "image",
+          "texture": "$button_texture_border",
+          "nineslice_size": "$button_nineslice",
+          "color": "$color_main",
+          "layer": 13,
+          "size": [ "100%", "100%" ]
+        }
+      },
+      {
+        "text_label": {
+          "type": "label",
+          "text": "$button_text",
+          "shadow": true,
+          "layer": 15,
+          "color": "$color_text_main",
+          "anchor_from": "center",
+          "anchor_to": "center"
+        }
       }
     ]
   },
