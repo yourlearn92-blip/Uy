@@ -2009,23 +2009,8 @@
       {
         "left_button@common_buttons_concept.purple_button": {
           "size": [ "48%", "100%" ],
-          "max_size": [ 60, "100%" ],
           "$button_content": "general_section.left_button_label",
-          "$pressed_button_name": "$left_pressed_button_name",
-          "$left_button_bindings|default": [
-            {
-              "binding_name": "#left_button_visible",
-              "binding_name_override": "#visible",
-              "binding_type": "collection",
-              "binding_collection_name": "$realm_collection_name",
-              "binding_condition": "once"
-            },
-            {
-              "binding_collection_name": "$realm_collection_name",
-              "binding_type": "collection_details"
-            }
-          ],
-          "bindings": "$left_button_bindings"
+          "$pressed_button_name": "$left_pressed_button_name"
         }
       },
       {
@@ -2037,15 +2022,8 @@
       {
         "right_button@common_buttons_concept.purple_button": {
           "size": [ "48%", "100%" ],
-          "max_size": [ 60, "100%" ],
           "$button_content": "general_section.right_button_label",
-          "$pressed_button_name": "$right_pressed_button_name",
-          "bindings": [
-            {
-              "binding_collection_name": "$realm_collection_name",
-              "binding_type": "collection_details"
-            }
-          ]
+          "$pressed_button_name": "$right_pressed_button_name"
         }
       },
       {
@@ -4878,7 +4856,6 @@
     "$glyph_color_texture": "textures/ui/how_to_play_button_default",
     "$glyph_size": [ 15, 15 ],
     "$button_text": "menu.howToPlay",
-    "visible": "(not $education_edition_china)",
     "$toggle_property_bag": {
       "#panel_title": "menu.howToPlay"
     }
