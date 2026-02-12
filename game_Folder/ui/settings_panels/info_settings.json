@@ -2,7 +2,7 @@
 {
   "namespace": "info_settings",
 
-// Info Button & Section
+// Info Button & Section - Noir Styled
   
   "info_button@settings_common.section_toggle_base": {
     "$toggle_view_binding_name": "info_button_toggle",
@@ -10,8 +10,17 @@
     "$glyph_color_texture": "textures/glyphs/info_glyph_color",
     "$glyph_size": [ 17, 17 ],
     "$button_text": "Lunar Client",
+    "$button_color": "$color_main",
+    "$button_text_color": "$color_text_main",
+    "$toggle_button_background": {
+      "type": "image",
+      "texture": "$button_texture_default",
+      "nineslice_size": "$button_nineslice",
+      "color": "$color_main",
+      "alpha": "$button_alpha_default"
+    },
     "$toggle_property_bag": {
-      "#panel_title": "§fLunar Client"
+      "#panel_title": "§f Lunar Client"
     }
   },
     
@@ -20,6 +29,7 @@
     "size": [ "100%", "100%c" ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
+    "background": "common_buttons.glass_panel",
     "bindings": [
       {
         "binding_type": "view",
@@ -34,7 +44,7 @@
           "type": "image",
 	        "anchor_from": "center",
           "anchor_to": "center",
-          "offset": [ 0,0 ],
+          "offset": [ 0, 0 ],
           "texture": "textures/changelog/info",
           "layer": 3,
           "uv": [ 0, 0 ],
@@ -45,78 +55,107 @@
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
           "font_size":"large",
-          "shadow":true,
+          "shadow": true,
+          "color": "$color_cyan",
           "text":"§fLUNAR CLIENT V5"
         }
       },
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
+          "shadow": true,
+          "color": "$color_text_main",
           "text":"§lCREDITS: "
         }
       },
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
+          "shadow": true,
+          "color": "$color_text_main",
           "text":"its file ui by astral v2.1(owner lightX) "
         }
       },
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
+          "shadow": true,
+          "color": "$color_text_main",
           "text":"§f._."
         }
       },
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
+          "shadow": true,
+          "color": "$color_text_main",
           "text":"§fOptions by BlueBerryShake (owner blackpanter)"
         }
       },
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
+          "shadow": true,
+          "color": "$color_text_main",
           "text":"
 §fClient By Mr.SlufrosT"
         }
       },
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
+          "shadow": true,
+          "color": "$color_text_main",
           "text":""
         }
       },
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
+          "shadow": true,
+          "color": "$color_text_main",
           "text":"§fthis just give good subpacks and fps boost purposes for (MCPE)."
         }
       },
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
+          "shadow": true,
+          "color": "$color_text_main",
           "text":""
         }
       },
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
+          "shadow": true,
+          "color": "$color_cyan",
           "text":"§fFeatures:"
         }
       },
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
+          "shadow": true,
+          "color": "$color_text_main",
           "text":"§f1.Fix annoying info "
         }
       },
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
+          "shadow": true,
+          "color": "$color_text_main",
           "text":"§f2.animation will add for lunar client (soon)."
         }
       },
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
+          "shadow": true,
+          "color": "$color_text_main",
           "text":"§f3.sky (will add)"
         }
       },
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
+          "shadow": true,
+          "color": "$color_text_main",
           "text":"§f4.realesed pack pvp lunar client"
         }
       },
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
+          "shadow": true,
+          "color": "$color_text_main",
           "text":"§f5.Update panorama
 §f5.add new ui
 §f6.for pvp

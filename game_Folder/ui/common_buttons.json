@@ -175,5 +175,25 @@
   "icon_button@common_buttons.simple_button": {
     "size": [ 32, 32 ],
     "$button_text": ""
+  },
+
+  // --- Glass Panel for Settings ---
+  "glass_panel": {
+    "type": "image",
+    "texture": "$button_texture_default",
+    "color": "$color_secondary",
+    "alpha": "$glass_alpha",
+    "nineslice_size": "$button_nineslice",
+    "layer": 0
+  },
+
+  // --- Glass Panel for Settings ---
+  "glass_panel": {
+    "type": "image",
+    "texture": "$button_texture_default",
+    "color": "$color_secondary",
+    "alpha": "$glass_alpha",
+    "nineslice_size": "$button_nineslice",
+    "layer": 0
   }
 }

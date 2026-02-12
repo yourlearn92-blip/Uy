@@ -1,20 +1,30 @@
 /********************************************************
 +*   (c) Mojang. All rights reserved                       *
-+*   (c) Microsoft. All rights reserved.                   *
++*   (c) Microsoft. All rights reserved - Noir Theme       *
 +*********************************************************/
 
 {
   "namespace": "general_section",
 
-  // PROFILE button & section
+  // PROFILE button & section - Noir Styled
   "profile_button@common_buttons_concept.green_button": {
+    "$button_color": "$color_main",
+    "$button_text_color": "$color_text_main",
+    "$button_alpha": "$button_alpha_default",
+    "$button_border_texture": "$button_texture_border",
+    "$button_nineslice": "$button_nineslice",
     "$toggle_view_binding_name": "profile_button_toggle",
     "$glyph_texture": "textures/ui/profile_glyph",
     "$glyph_color_texture": "textures/ui/profile_glyph_color",
     "$glyph_size": [ 11, 12 ],
     "$button_text": "options.profile",
+    "$button_color": "$color_main",
+    "$button_text_color": "$color_text_main",
+    "$button_alpha": "$button_alpha_default",
+    "$button_border_texture": "$button_texture_border",
+    "$button_nineslice": "$button_nineslice",
     "$toggle_property_bag": {
-      "#panel_title": "options.profileTitle"
+      "#panel_title": "§fProfile"
     }
   },
 
@@ -256,6 +266,7 @@
 
   "profile_section": {
     "type": "stack_panel",
+    "background": "common_buttons.glass_panel",
     "size": [ "100%", "100%c" ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
@@ -1100,18 +1111,28 @@
     ]
   },
 
-  //Storage management button & section
+  //Storage management button & section - Noir Styled
   "storage_management_button@common_buttons_concept.green_button": {
+    "$button_color": "$color_main",
+    "$button_text_color": "$color_text_main",
+    "$button_alpha": "$button_alpha_default",
+    "$button_border_texture": "$button_texture_border",
+    "$button_nineslice": "$button_nineslice",
     "$toggle_view_binding_name": "storage_management_button_toggle",
     "enabled": "(not $trial)",
     "visible": "($is_pregame and not $education_edition_china)",
     "$button_text": "menu.storageManagement",
+    "$button_color": "$color_main",
+    "$button_text_color": "$color_text_main",
+    "$button_alpha": "$button_alpha_default",
+    "$button_border_texture": "$button_texture_border",
+    "$button_nineslice": "$button_nineslice",
     "$glyph_texture": "textures/ui/storageIcon",
     "$glyph_color_texture": "textures/ui/storageIconColor",
     "$glyph_uv": [ 0, 0 ],
     "$glyph_size": [ 17, 16 ],
     "$toggle_property_bag": {
-      "#panel_title": "menu.storageManagement"
+      "#panel_title": "§fStorage Management"
     }
   },
 
@@ -1152,6 +1173,11 @@
   // VIDEO button & section
 
   "video_button@common_buttons_concept.green_button": {
+    "$button_color": "$color_main",
+    "$button_text_color": "$color_text_main",
+    "$button_alpha": "$button_alpha_default",
+    "$button_border_texture": "$button_texture_border",
+    "$button_nineslice": "$button_nineslice",
     "$toggle_view_binding_name": "video_button_toggle",
     "$glyph_texture": "textures/ui/video_glyph",
     "$glyph_color_texture": "textures/ui/video_glyph_color",
@@ -1169,6 +1195,7 @@
 
   "video_section": {
     "type": "stack_panel",
+    "background": "common_buttons.glass_panel",
     "size": [ "100%", "100%c" ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
@@ -2337,6 +2364,11 @@
   },
 
   "view_subscriptions_button@common_buttons_concept.green_button": {
+    "$button_color": "$color_main",
+    "$button_text_color": "$color_text_main",
+    "$button_alpha": "$button_alpha_default",
+    "$button_border_texture": "$button_texture_border",
+    "$button_nineslice": "$button_nineslice",
     "$toggle_view_binding_name": "view_subscriptions_button_toggle",
     "enabled": "(not $trial)",
     "$glyph_texture": "textures/ui/subscription_glyph",
@@ -2350,6 +2382,7 @@
 
   "view_subscriptions_section": {
     "type": "stack_panel",
+    "background": "common_buttons.glass_panel",
     "orientation": "vertical",
     "size": [ "100% - 6px", "100%c" ],
     "anchor_from": "top_middle",
@@ -2582,6 +2615,11 @@
   // VR button & section
 
   "vr_button@common_buttons_concept.green_button": {
+    "$button_color": "$color_main",
+    "$button_text_color": "$color_text_main",
+    "$button_alpha": "$button_alpha_default",
+    "$button_border_texture": "$button_texture_border",
+    "$button_nineslice": "$button_nineslice",
     "$toggle_view_binding_name": "vr_button_toggle",
     "$glyph_texture": "textures/ui/vr_glyph",
     "$glyph_color_texture": "textures/ui/vr_glyph_color",
@@ -2594,6 +2632,7 @@
 
   "vr_section": {
     "type": "stack_panel",
+    "background": "common_buttons.glass_panel",
     "size": [ "100%", "100%c" ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
@@ -2785,6 +2824,11 @@
   // Accessibility button & section
 
   "accessibility_button@common_buttons_concept.green_button": {
+    "$button_color": "$color_main",
+    "$button_text_color": "$color_text_main",
+    "$button_alpha": "$button_alpha_default",
+    "$button_border_texture": "$button_texture_border",
+    "$button_nineslice": "$button_nineslice",
     "$toggle_view_binding_name": "accessibility_button_toggle",
     "$glyph_texture": "textures/ui/accessibility_glyph",
     "$glyph_color_texture": "textures/ui/accessibility_glyph_color",
@@ -2797,6 +2841,7 @@
 
   "accessibility_section": {
     "type": "stack_panel",
+    "background": "common_buttons.glass_panel",
     "size": [ "100%", "100%c" ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
@@ -2862,6 +2907,11 @@
   // Music and Sound button & section
 
   "sound_button@common_buttons_concept.green_button": {
+    "$button_color": "$color_main",
+    "$button_text_color": "$color_text_main",
+    "$button_alpha": "$button_alpha_default",
+    "$button_border_texture": "$button_texture_border",
+    "$button_nineslice": "$button_nineslice",
     "$toggle_view_binding_name": "sound_button_toggle",
     "$glyph_texture": "textures/ui/sound_glyph",
     "$glyph_color_texture": "textures/ui/sound_glyph_color",
@@ -2874,6 +2924,7 @@
 
   "sound_section": {
     "type": "stack_panel",
+    "background": "common_buttons.glass_panel",
     "size": [ "100%", "100%c" ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
@@ -3046,6 +3097,11 @@
   // LANGUAGE button & section
 
   "language_button@common_buttons_concept.green_button": {
+    "$button_color": "$color_main",
+    "$button_text_color": "$color_text_main",
+    "$button_alpha": "$button_alpha_default",
+    "$button_border_texture": "$button_texture_border",
+    "$button_nineslice": "$button_nineslice",
     "$toggle_view_binding_name": "language_button_toggle",
     "$glyph_texture": "textures/ui/language_glyph",
     "$glyph_color_texture": "textures/ui/language_glyph_color",
@@ -3084,6 +3140,7 @@
 
   "language_section": {
     "type": "stack_panel",
+    "background": "common_buttons.glass_panel",
     "$default_text_color": [ 0.3, 0.3, 0.3 ],
     "$active_text_color": [ 1.0, 1.0, 1.0 ],
 
@@ -3807,6 +3864,11 @@
   // Automation Tab
 
   "automation_button@common_buttons_concept.green_button": {
+    "$button_color": "$color_main",
+    "$button_text_color": "$color_text_main",
+    "$button_alpha": "$button_alpha_default",
+    "$button_border_texture": "$button_texture_border",
+    "$button_nineslice": "$button_nineslice",
     "$toggle_view_binding_name": "automation_button_toggle",
     "$glyph_texture": "textures/ui/automation_glyph",
     "$glyph_color_texture": "textures/ui/automation_glyph_color",
@@ -3819,6 +3881,7 @@
 
   "automation_section": {
     "type": "stack_panel",
+    "background": "common_buttons.glass_panel",
     "size": [ "100%", "100%c" ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
@@ -3926,6 +3989,11 @@
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
   "debug_button@common_buttons_concept.green_button": {
+    "$button_color": "$color_main",
+    "$button_text_color": "$color_text_main",
+    "$button_alpha": "$button_alpha_default",
+    "$button_border_texture": "$button_texture_border",
+    "$button_nineslice": "$button_nineslice",
     "$toggle_view_binding_name": "debug_button_toggle",
     "$glyph_texture": "textures/ui/debug_glyph",
     "$glyph_color_texture": "textures/ui/debug_glyph_color",
@@ -3968,6 +4036,7 @@
 
   "debug_section": {
     "type": "stack_panel",
+    "background": "common_buttons.glass_panel",
     "size": [ "100%", "100%c" ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
@@ -4703,6 +4772,11 @@
   },
 
   "broadcast_button@common_buttons_concept.green_button": {
+    "$button_color": "$color_main",
+    "$button_text_color": "$color_text_main",
+    "$button_alpha": "$button_alpha_default",
+    "$button_border_texture": "$button_texture_border",
+    "$button_nineslice": "$button_nineslice",
     "ignored": "(not $can_support_broadcast)",
     "$toggle_view_binding_name": "broadcast_button_toggle",
     "$glyph_texture": "textures/ui/broadcast_glyph",
@@ -4717,6 +4791,7 @@
   "broadcast_section": {
     "ignored": "(not $can_support_broadcast)",
     "type": "stack_panel",
+    "background": "common_buttons.glass_panel",
     "size": [ "100%", "100%c" ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",

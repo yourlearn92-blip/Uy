@@ -1,17 +1,26 @@
-//Code gotten from Vanilla Resources Pack.//
+//Code gotten from Vanilla Resources Pack - Noir Theme Applied//
 
 {
   "namespace": "view_settings",
 
-// View Button & Section
+// View Button & Section - Noir Styled
   "view_button@settings_common.section_toggle_base": {
     "$toggle_view_binding_name": "interface_button_toggle",
     "$glyph_texture": "textures/glyphs/view_glyph",
     "$glyph_color_texture": "textures/glyphs/view_glyph_color",
     "$glyph_size": [ 17, 17 ],
     "$button_text": "View Settings",
+    "$button_color": "$color_main",
+    "$button_text_color": "$color_text_main",
+    "$toggle_button_background": {
+      "type": "image",
+      "texture": "$button_texture_default",
+      "nineslice_size": "$button_nineslice",
+      "color": "$color_main",
+      "alpha": "$button_alpha_default"
+    },
     "$toggle_property_bag": {
-      "#panel_title": "View Settings"
+      "#panel_title": "§fView Settings"
     }
   },
     
@@ -20,6 +29,7 @@
     "size": [ "100%", "100%c" ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
+    "background": "common_buttons.glass_panel",
     "bindings": [
       {
         "binding_type": "view",
@@ -38,6 +48,8 @@
           "$slider_name": "field_of_view",
           "$slider_value_binding_name": "#field_of_view",
           "$option_enabled_binding_name": "#field_of_view_enabled",
+          "$slider_control": "common_buttons.premium_slider",
+          "$label_color": "$color_text_main",
           "$label_bindings": [
             {
               "binding_name": "$option_label"
@@ -53,6 +65,8 @@
           "$slider_value_binding_name": "#interface_opacity",
           "$slider_tts_text_value": "#interface_opacity_text_value",
           "$option_enabled_binding_name": "#interface_opacity_enabled",
+          "$slider_control": "common_buttons.premium_slider",
+          "$label_color": "$color_text_main",
           "$label_bindings": [
             {
               "binding_name": "$option_label"
@@ -69,6 +83,8 @@
           "$slider_value_binding_name": "#splitscreen_interface_opacity",
           "$slider_tts_text_value": "#splitscreen_interface_opacity_text_value",
           "$option_enabled_binding_name": "#splitscreen_interface_opacity_enabled",
+          "$slider_control": "common_buttons.premium_slider",
+          "$label_color": "$color_text_main",
           "$label_bindings": [
             {
               "binding_name": "$option_label"
@@ -86,6 +102,8 @@
               "action_button@settings_common.action_button": {
                 "$pressed_button_name": "setup_safe_zone_button",
                 "$button_text": "options.safeZone.title",
+                "$button_color": "$color_main",
+                "$button_text_color": "$color_text_main",
                 "anchor_from": "top_right",
                 "anchor_to": "top_right"
               }
@@ -101,6 +119,8 @@
           "$option_label": "Fullscreen",
           "$option_binding_name": "#full_screen",
           "$option_enabled_binding_name": "#full_screen_enabled",
+          "$toggle_control": "common_buttons.premium_toggle",
+          "$label_color": "$color_text_main",
           "$toggle_name": "full_screen"
         }
       },
@@ -109,6 +129,8 @@
           "$option_label": "Hide Player Renderer",
           "$option_binding_name": "#hide_paperdoll",
           "$option_enabled_binding_name": "#hide_paperdoll_enabled",
+          "$toggle_control": "common_buttons.premium_toggle",
+          "$label_color": "$color_text_main",
           "$toggle_name": "hide_paperdoll"
         }
       },
@@ -118,6 +140,8 @@
           "$option_label": "Screen Animations",
           "$option_binding_name": "#screen_animations",
           "$option_enabled_binding_name": "#screen_animations_enabled",
+          "$toggle_control": "common_buttons.premium_toggle",
+          "$label_color": "$color_text_main",
           "$toggle_name": "screen_animations",
           "bindings": [
             {
@@ -136,6 +160,7 @@
           "$dropdown_name": "split_screen_dropdown",
           "$option_enabled_binding_name": "#split_screen_dropdown_enabled",
           "$options_dropdown_toggle_label_binding": "#split_screen_dropdown_toggle_label",
+          "$label_color": "$color_text_main",
           "$dropdown_scroll_content_size": [ "100%", "145%" ]
         }
       },
@@ -144,6 +169,8 @@
           "$option_label": "Show auto-save icon",
           "$option_binding_name": "#show_auto_save_icon",
           "$option_enabled_binding_name": "#show_auto_save_icon_enabled",
+          "$toggle_control": "common_buttons.premium_toggle",
+          "$label_color": "$color_text_main",
           "$toggle_name": "show_auto_save_icon"
         }
       },
@@ -153,6 +180,8 @@
           "$option_label": "Outline Selection",
           "$option_binding_name": "#classic_box_selection",
           "$option_enabled_binding_name": "#classic_box_selection_enabled",
+          "$toggle_control": "common_buttons.premium_toggle",
+          "$label_color": "$color_text_main",
           "$toggle_name": "classic_box_selection"
         }
       },
@@ -162,6 +191,8 @@
           "$option_label": "options.vr_classic_box_selection",
           "$option_binding_name": "#vr_classic_box_selection",
           "$option_enabled_binding_name": "#vr_classic_box_selection_enabled",
+          "$toggle_control": "common_buttons.premium_toggle",
+          "$label_color": "$color_text_main",
           "$toggle_name": "vr_classic_box_selection"
         }
       },
@@ -170,6 +201,8 @@
           "$option_label": "Show Player Names",
           "$option_binding_name": "#ingame_player_names",
           "$option_enabled_binding_name": "#ingame_player_names_enabled",
+          "$toggle_control": "common_buttons.premium_toggle",
+          "$label_color": "$color_text_main",
           "$toggle_name": "ingame_player_names"
         }
       },
@@ -179,6 +212,8 @@
           "$option_label": "options.splitscreenIngamePlayerNames",
           "$option_binding_name": "#splitscreen_ingame_player_names",
           "$option_enabled_binding_name": "#splitscreen_ingame_player_names_enabled",
+          "$toggle_control": "common_buttons.premium_toggle",
+          "$label_color": "$color_text_main",
           "$toggle_name": "splitscreen_ingame_player_names"
         }
       },
@@ -188,6 +223,8 @@
           "$option_label": "View Bobbing",
           "$option_binding_name": "#view_bobbing",
           "$option_enabled_binding_name": "#view_bobbing_enabled",
+          "$toggle_control": "common_buttons.premium_toggle",
+          "$label_color": "$color_text_main",
           "$toggle_name": "view_bobbing"
         }
       },
@@ -196,6 +233,8 @@
           "$option_label": "Field of view is affected by gameplay",
           "$option_binding_name": "#field_of_view_toggle",
           "$option_enabled_binding_name": "#field_of_view_toggle_enabled",
+          "$toggle_control": "common_buttons.premium_toggle",
+          "$label_color": "$color_text_main",
           "$toggle_name": "field_of_view_toggle"
         }
       },
@@ -208,6 +247,7 @@
           "$dropdown_name": "ui_profile_dropdown",
           "$option_enabled_binding_name": "#ui_profile_dropdown_enabled",
           "$options_dropdown_toggle_label_binding": "#ui_profile_dropdown_toggle_label",
+          "$label_color": "$color_text_main",
           "$dropdown_scroll_content_size": [ "100%", "145%" ]
         }
       },
@@ -220,6 +260,8 @@
           "$slider_tts_text_value": "#gui_scale_text_value",
           "$option_enabled_binding_name": "#gui_scale_enabled",
           "$slider_steps_binding_name": "#gui_scale_steps",
+          "$slider_control": "common_buttons.premium_slider",
+          "$label_color": "$color_text_main",
           "$label_bindings": [
             {
               "binding_name": "$option_label"
