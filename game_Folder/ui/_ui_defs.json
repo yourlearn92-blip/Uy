@@ -11,6 +11,10 @@
     "ui/brewing_stand_screen.json",
     "ui/controls_settings.json",
     "ui/trade_2_screen.json",
-    "ui/trade_2_screen_pocket.json"
+    "ui/trade_2_screen_pocket.json",
+    "ui/settings_panels/general_section.json",
+    "ui/settings_panels/video_settings.json",
+    "ui/settings_panels/view_settings.json",
+    "ui/settings_panels/info_settings.json"
   ]
 }
