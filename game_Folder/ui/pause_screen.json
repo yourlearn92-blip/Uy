@@ -29,11 +29,11 @@
                 ]
               }
             },
-            { "res": { "type": "panel", "size": [ "100%", 25 ], "controls": [ { "b@pause.button_template": { "$button_text": "Resume", "$pressed_button_name": "button.pause_resume" } } ] } },
+            { "res": { "type": "panel", "size": [ "100%", 25 ], "controls": [ { "b@pause.button_template": { "$button_text": "Resume", "$pressed_button_name": "button.pause_resume", "focus_identifier": "FOCUS_OVERRIDE", "focus": true } } ] } },
             { "p1": { "type": "panel", "size": [ "100%", 4 ] } },
-            { "set": { "type": "panel", "size": [ "100%", 25 ], "controls": [ { "b@pause.button_template": { "$button_text": "Settings", "$pressed_button_name": "button.pause_settings" } } ] } },
+            { "set": { "type": "panel", "size": [ "100%", 25 ], "controls": [ { "b@pause.button_template": { "$button_text": "Settings", "$pressed_button_name": "button.pause_settings", "focus_identifier": "FOCUS_OVERRIDE" } } ] } },
             { "p2": { "type": "panel", "size": [ "100%", 4 ] } },
-            { "quit": { "type": "panel", "size": [ "100%", 25 ], "controls": [ { "b@pause.button_template": { "$button_text": "Save & Quit", "$pressed_button_name": "button.pause_quit" } } ] } }
+            { "quit": { "type": "panel", "size": [ "100%", 25 ], "controls": [ { "b@pause.button_template": { "$button_text": "Save & Quit", "$pressed_button_name": "button.pause_quit", "focus_identifier": "FOCUS_OVERRIDE" } } ] } }
           ]
         }
       }
@@ -43,6 +43,7 @@
   "button_template": {
     "type": "button",
     "size": [ "100%", "100%" ],
+    "tab_index": 1,
     "button_mappings": [
       {
         "from_button_id": "button.menu_select",
@@ -115,6 +116,20 @@
 
   "pause_screen@common.base_screen": {
     "$screen_bg_content": "common_buttons.empty_panel",
-    "$screen_content": "pause.pause_screen_content"
+    "$screen_content": "pause.pause_screen_content",
+    "screen_panel_handlers": [
+      {
+        "event_name": "button.pause_resume",
+        "action": "none"
+      },
+      {
+        "event_name": "button.pause_settings",
+        "action": "none"
+      },
+      {
+        "event_name": "button.pause_quit",
+        "action": "none"
+      }
+    ]
   }
 }
