@@ -29,7 +29,6 @@
     "size": [ "100%", "100%c" ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "background": "common_buttons.glass_panel",
     "bindings": [
       {
         "binding_type": "view",

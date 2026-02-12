@@ -266,7 +266,6 @@
 
   "profile_section": {
     "type": "stack_panel",
-    "background": "common_buttons.glass_panel",
     "size": [ "100%", "100%c" ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
@@ -1112,15 +1111,13 @@
   },
 
   //Storage management button & section - Noir Styled
-  "storage_management_button@common_buttons_concept.green_button": {
+  "storage_management_button@settings_common.section_toggle_base": {
     "$button_color": "$color_main",
     "$button_text_color": "$color_text_main",
     "$button_alpha": "$button_alpha_default",
     "$button_border_texture": "$button_texture_border",
     "$button_nineslice": "$button_nineslice",
     "$toggle_view_binding_name": "storage_management_button_toggle",
-    "enabled": "(not $trial)",
-    "visible": "($is_pregame and not $education_edition_china)",
     "$button_text": "menu.storageManagement",
     "$button_color": "$color_main",
     "$button_text_color": "$color_text_main",
@@ -1172,7 +1169,7 @@
 
   // VIDEO button & section
 
-  "video_button@common_buttons_concept.green_button": {
+  "video_button@settings_common.section_toggle_base": {
     "$button_color": "$color_main",
     "$button_text_color": "$color_text_main",
     "$button_alpha": "$button_alpha_default",
@@ -1195,7 +1192,6 @@
 
   "video_section": {
     "type": "stack_panel",
-    "background": "common_buttons.glass_panel",
     "size": [ "100%", "100%c" ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
@@ -2363,14 +2359,13 @@
     "$image_size": [ "85.1315%y", 70 ]
   },
 
-  "view_subscriptions_button@common_buttons_concept.green_button": {
+  "view_subscriptions_button@settings_common.section_toggle_base": {
     "$button_color": "$color_main",
     "$button_text_color": "$color_text_main",
     "$button_alpha": "$button_alpha_default",
     "$button_border_texture": "$button_texture_border",
     "$button_nineslice": "$button_nineslice",
     "$toggle_view_binding_name": "view_subscriptions_button_toggle",
-    "enabled": "(not $trial)",
     "$glyph_texture": "textures/ui/subscription_glyph",
     "$glyph_color_texture": "textures/ui/subscription_glyph_color",
     "$glyph_size": [ 15, 13 ],
@@ -2382,7 +2377,6 @@
 
   "view_subscriptions_section": {
     "type": "stack_panel",
-    "background": "common_buttons.glass_panel",
     "orientation": "vertical",
     "size": [ "100% - 6px", "100%c" ],
     "anchor_from": "top_middle",
@@ -2632,7 +2626,6 @@
 
   "vr_section": {
     "type": "stack_panel",
-    "background": "common_buttons.glass_panel",
     "size": [ "100%", "100%c" ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
@@ -2823,7 +2816,7 @@
 
   // Accessibility button & section
 
-  "accessibility_button@common_buttons_concept.green_button": {
+  "accessibility_button@settings_common.section_toggle_base": {
     "$button_color": "$color_main",
     "$button_text_color": "$color_text_main",
     "$button_alpha": "$button_alpha_default",
@@ -2841,7 +2834,6 @@
 
   "accessibility_section": {
     "type": "stack_panel",
-    "background": "common_buttons.glass_panel",
     "size": [ "100%", "100%c" ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
@@ -2906,7 +2898,7 @@
 
   // Music and Sound button & section
 
-  "sound_button@common_buttons_concept.green_button": {
+  "sound_button@settings_common.section_toggle_base": {
     "$button_color": "$color_main",
     "$button_text_color": "$color_text_main",
     "$button_alpha": "$button_alpha_default",
@@ -2924,7 +2916,6 @@
 
   "sound_section": {
     "type": "stack_panel",
-    "background": "common_buttons.glass_panel",
     "size": [ "100%", "100%c" ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
@@ -3096,7 +3087,7 @@
 
   // LANGUAGE button & section
 
-  "language_button@common_buttons_concept.green_button": {
+  "language_button@settings_common.section_toggle_base": {
     "$button_color": "$color_main",
     "$button_text_color": "$color_text_main",
     "$button_alpha": "$button_alpha_default",
@@ -3140,7 +3131,6 @@
 
   "language_section": {
     "type": "stack_panel",
-    "background": "common_buttons.glass_panel",
     "$default_text_color": [ 0.3, 0.3, 0.3 ],
     "$active_text_color": [ 1.0, 1.0, 1.0 ],
 
@@ -3881,7 +3871,6 @@
 
   "automation_section": {
     "type": "stack_panel",
-    "background": "common_buttons.glass_panel",
     "size": [ "100%", "100%c" ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
@@ -4036,7 +4025,6 @@
 
   "debug_section": {
     "type": "stack_panel",
-    "background": "common_buttons.glass_panel",
     "size": [ "100%", "100%c" ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
@@ -4791,7 +4779,6 @@
   "broadcast_section": {
     "ignored": "(not $can_support_broadcast)",
     "type": "stack_panel",
-    "background": "common_buttons.glass_panel",
     "size": [ "100%", "100%c" ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
