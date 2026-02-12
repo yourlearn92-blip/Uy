@@ -25,10 +25,20 @@
           "anchor_to": "center",
           "offset": [ 0, 10 ],
           "controls": [
-            { "empty@achievement_wool_screen.empty_progress_bar_icon": { "layer": 1 } },
             { 
-              "full@achievement_wool_screen.full_progress_bar_icon": { 
-                "layer": 2,
+              "empty": { 
+                "type": "image",
+                "texture": "textures/gui/client/btn_default",
+                "size": [ "100%", "100%" ],
+                "color": [ 0.3, 0.3, 0.3 ]
+              } 
+            },
+            { 
+              "full": { 
+                "type": "image",
+                "texture": "textures/gui/client/btn_default",
+                "size": [ "100%", "100%" ],
+                "color": [ 0.0, 0.8, 0.8 ],
                 "bindings": [ 
                   { 
                     "binding_name": "#loading_bar_percentage", 

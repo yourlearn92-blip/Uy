@@ -1,6 +1,19 @@
 {
   "namespace": "pause",
 
+  "pause_btn_row": {
+    "type": "panel",
+    "size": [ "100%", 25 ],
+    "controls": [
+      { 
+        "b@common_buttons.simple_button": { 
+          "size": [ "100%", "100%" ],
+          "$button_text": "$button_text"
+        } 
+      }
+    ]
+  },
+
   "pause_screen_content": {
     "type": "panel",
     "controls": [
@@ -29,86 +42,12 @@
                 ]
               }
             },
-            { "res": { "type": "panel", "size": [ "100%", 25 ], "controls": [ { "b@pause.button_template": { "$button_text": "Resume", "$pressed_button_name": "button.pause_resume", "focus_identifier": "FOCUS_OVERRIDE", "focus": true } } ] } },
+            { "res@pause.pause_btn_row": { "$button_text": "Resume", "$pressed_button_name": "button.pause_resume" } },
             { "p1": { "type": "panel", "size": [ "100%", 4 ] } },
-            { "set": { "type": "panel", "size": [ "100%", 25 ], "controls": [ { "b@pause.button_template": { "$button_text": "Settings", "$pressed_button_name": "button.pause_settings", "focus_identifier": "FOCUS_OVERRIDE" } } ] } },
+            { "set@pause.pause_btn_row": { "$button_text": "Settings", "$pressed_button_name": "button.pause_settings" } },
             { "p2": { "type": "panel", "size": [ "100%", 4 ] } },
-            { "quit": { "type": "panel", "size": [ "100%", 25 ], "controls": [ { "b@pause.button_template": { "$button_text": "Save & Quit", "$pressed_button_name": "button.pause_quit", "focus_identifier": "FOCUS_OVERRIDE" } } ] } }
+            { "quit@pause.pause_btn_row": { "$button_text": "Save & Quit", "$pressed_button_name": "button.pause_quit" } }
           ]
-        }
-      }
-    ]
-  },
-
-  "button_template": {
-    "type": "button",
-    "size": [ "100%", "100%" ],
-    "tab_index": 1,
-    "button_mappings": [
-      {
-        "from_button_id": "button.menu_select",
-        "to_button_id": "$pressed_button_name",
-        "mapping_type": "pressed"
-      },
-      {
-        "from_button_id": "button.menu_ok",
-        "to_button_id": "$pressed_button_name",
-        "mapping_type": "pressed"
-      }
-    ],
-    "controls": [
-      {
-        "default": {
-          "type": "image",
-          "texture": "$button_texture_default",
-          "nineslice_size": "$button_nineslice",
-          "color": "$color_main",
-          "alpha": "$button_alpha_default",
-          "layer": 10,
-          "size": [ "100%", "100%" ]
-        }
-      },
-      {
-        "hover": {
-          "type": "image",
-          "texture": "$button_texture_hover",
-          "nineslice_size": "$button_nineslice",
-          "color": "$color_main",
-          "alpha": "$button_alpha_hover",
-          "layer": 11,
-          "size": [ "100%", "100%" ]
-        }
-      },
-      {
-        "pressed": {
-          "type": "image",
-          "texture": "$button_texture_pressed",
-          "nineslice_size": "$button_nineslice",
-          "color": "$color_secondary",
-          "alpha": "$button_alpha_pressed",
-          "layer": 12,
-          "size": [ "100%", "100%" ]
-        }
-      },
-      {
-        "border": {
-          "type": "image",
-          "texture": "$button_texture_border",
-          "nineslice_size": "$button_nineslice",
-          "color": "$color_main",
-          "layer": 13,
-          "size": [ "100%", "100%" ]
-        }
-      },
-      {
-        "text_label": {
-          "type": "label",
-          "text": "$button_text",
-          "shadow": true,
-          "layer": 15,
-          "color": "$color_text_main",
-          "anchor_from": "center",
-          "anchor_to": "center"
         }
       }
     ]
@@ -116,20 +55,6 @@
 
   "pause_screen@common.base_screen": {
     "$screen_bg_content": "common_buttons.empty_panel",
-    "$screen_content": "pause.pause_screen_content",
-    "screen_panel_handlers": [
-      {
-        "event_name": "button.pause_resume",
-        "action": "none"
-      },
-      {
-        "event_name": "button.pause_settings",
-        "action": "none"
-      },
-      {
-        "event_name": "button.pause_quit",
-        "action": "none"
-      }
-    ]
+    "$screen_content": "pause.pause_screen_content"
   }
 }
