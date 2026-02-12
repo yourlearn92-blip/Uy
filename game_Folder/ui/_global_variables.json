@@ -10,6 +10,8 @@
   "$color_white": [ 1.0, 1.0, 1.0 ],
   "$color_text_main": [ 1.0, 1.0, 1.0 ],
   "$color_cyan_secondary": [ 0.0, 0.8, 0.8 ],
+  "$color_main": [ 1.0, 1.0, 1.0 ],
+  "$color_secondary": [ 0.0, 0.8, 0.8 ],
 
   // --- TRANSPARENCY (GLASS EFFECT) ---
   "$glass_alpha": 0.4,
