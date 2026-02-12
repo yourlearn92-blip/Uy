@@ -345,11 +345,11 @@
   },
 
   "bg_no_safezone_screen_panel": {
-    "type": "panel",
+    "type": "image",
+    "texture": "textures/ui/white",
     "size": [ "100%", "100%" ],
-    // We use an empty control inside to override any forced engine textures
-    "controls": [
-      { "empty@common_buttons.empty_panel": {} }
-    ]
+    "color": [ 0, 0, 0 ],
+    "alpha": 0.0
   }
+}}
 }
