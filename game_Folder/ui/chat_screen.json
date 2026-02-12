@@ -346,6 +346,10 @@
   },
 
   "bg_no_safezone_screen_panel": {
-    "type": "panel"
+    "type": "image",
+    "texture": "textures/ui/white",
+    "size": [ "100%", "100%" ],
+    "color": [ 0, 0, 0 ],
+    "alpha": 0.0
   }
 }
