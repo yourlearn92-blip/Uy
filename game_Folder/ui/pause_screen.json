@@ -1,16 +1,16 @@
 {
   "namespace": "pause",
 
-  "pause_btn_row": {
-    "type": "panel",
-    "size": [ "100%", 25 ],
+  // --- CUSTOM NOIR BUTTON STYLE ---
+  "noir_button@common.button": {
+    "size": [ 160, 25 ],
+    "$button_text": "default",
     "controls": [
-      { 
-        "b@common_buttons.simple_button": { 
-          "size": [ "100%", "100%" ],
-          "$button_text": "$button_text"
-        } 
-      }
+      { "default": { "type": "image", "texture": "textures/gui/client/btn_default", "color": [ 0, 0, 0 ], "alpha": 0.5, "layer": 1 } },
+      { "hover": { "type": "image", "texture": "textures/gui/client/btn_hover", "color": [ 1, 1, 1 ], "alpha": 0.2, "layer": 2 } },
+      { "pressed": { "type": "image", "texture": "textures/gui/client/btn_pressed", "color": [ 1, 1, 1 ], "alpha": 0.4, "layer": 3 } },
+      { "border": { "type": "image", "texture": "textures/gui/client/btn_hover", "color": [ 1, 1, 1 ], "alpha": 0.5, "size": [ "100% + 2px", "100% + 2px" ], "layer": 0 } },
+      { "label": { "type": "label", "text": "$button_text", "layer": 5, "shadow": true } }
     ]
   },
 
@@ -18,35 +18,18 @@
     "type": "panel",
     "controls": [
       {
-        "pause_stack": {
+        "stack": {
           "type": "stack_panel",
           "size": [ 160, "100%c" ],
           "anchor_from": "center",
           "anchor_to": "center",
-          "layer": 5,
           "controls": [
-            {
-              "title_panel": {
-                "type": "panel",
-                "size": [ "100%", 25 ],
-                "controls": [
-                  {
-                    "game_paused": {
-                      "type": "label",
-                      "text": "GAME PAUSED",
-                      "offset": [ 0, -5 ],
-                      "shadow": true,
-                      "color": [ 1.0, 1.0, 1.0 ]
-                    }
-                  }
-                ]
-              }
-            },
-            { "res@pause.pause_btn_row": { "$button_text": "Resume", "$pressed_button_name": "button.pause_resume" } },
-            { "p1": { "type": "panel", "size": [ "100%", 4 ] } },
-            { "set@pause.pause_btn_row": { "$button_text": "Settings", "$pressed_button_name": "button.pause_settings" } },
-            { "p2": { "type": "panel", "size": [ "100%", 4 ] } },
-            { "quit@pause.pause_btn_row": { "$button_text": "Save & Quit", "$pressed_button_name": "button.pause_quit" } }
+            { "title": { "type": "panel", "size": [ "100%", 30 ], "controls": [ { "l": { "type": "label", "text": "GAME PAUSED" } } ] } },
+            { "res": { "type": "panel", "size": [ "100%", 25 ], "controls": [ { "b@pause.noir_button": { "$button_text": "Resume", "$pressed_button_name": "button.menu_exit" } } ] } },
+            { "sp1": { "type": "panel", "size": [ "100%", 4 ] } },
+            { "set": { "type": "panel", "size": [ "100%", 25 ], "controls": [ { "b@pause.noir_button": { "$button_text": "Settings", "$pressed_button_name": "button.menu_settings" } } ] } },
+            { "sp2": { "type": "panel", "size": [ "100%", 4 ] } },
+            { "quit": { "type": "panel", "size": [ "100%", 25 ], "controls": [ { "b@pause.noir_button": { "$button_text": "Save & Quit", "$pressed_button_name": "button.menu_quit" } } ] } }
           ]
         }
       }
@@ -54,7 +37,8 @@
   },
 
   "pause_screen@common.base_screen": {
-    "$screen_bg_content": "common_buttons.empty_panel",
-    "$screen_content": "pause.pause_screen_content"
+    "is_showing_menu": true,
+    "should_steal_mouse": true,
+    "controls": [ { "content@pause.pause_screen_content": {} } ]
   }
-}
+}}
