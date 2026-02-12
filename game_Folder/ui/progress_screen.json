@@ -1,69 +1,65 @@
 {
   "namespace": "progress",
 
-  "progress_screen_bg": {
-    "type": "panel",
-    "layer": 1,
-    "controls": [
-      { "bg": { "type": "image", "texture": "textures/ui/white", "color": [ 0, 0, 0 ], "size": [ "100%", "100%" ] } }
-    ]
-  },
-
-  "progress_screen@common.base_screen": {
-    "is_showing_menu": true,
-    "$screen_bg_content": "progress.progress_screen_bg",
-    "controls": [ 
-      { "content@progress.progress_screen_content": { "layer": 10 } } 
-    ]
-  },
-
   "progress_screen_content": {
     "type": "panel",
-    "size": [ "100%", "100%" ],
+    "layer": 10,
     "controls": [
       {
-        "cursor_blocker": {
-          "type": "panel",
-          "size": [ "100%", "100%" ],
-          "layer": 99,
-          "alpha": 0
-        }
-      },
-      {
-        "loading_label": {
+        "title_text": {
           "type": "label",
           "text": "#title_text",
           "anchor_from": "center",
           "anchor_to": "center",
           "offset": [ 0, -20 ],
           "color": [ 1.0, 1.0, 1.0 ],
+          "shadow": true,
           "bindings": [ { "binding_name": "#title_text" } ]
         }
       },
       {
-        "bar_panel": {
+        "bar": {
           "type": "panel",
-          "size": [ 200, 2 ],
+          "size": [ 150, 4 ],
           "anchor_from": "center",
           "anchor_to": "center",
           "offset": [ 0, 10 ],
           "controls": [
-            { "empty": { "type": "image", "texture": "textures/ui/white", "color": [ 0.2, 0.2, 0.2 ], "size": [ "100%", "100%" ] } },
-            {
-              "full": {
-                "type": "image",
-                "texture": "textures/ui/white",
-                "color": [ 1, 1, 1 ],
-                "size": [ "100%", "100%" ],
-                "clip_direction": "left",
-                "bindings": [
-                  { "binding_name": "#progress_bar_percentage", "binding_name_override": "#clip_ratio" }
+            { "empty@achievement_wool_screen.empty_progress_bar_icon": { "layer": 1 } },
+            { 
+              "full@achievement_wool_screen.full_progress_bar_icon": { 
+                "layer": 2,
+                "bindings": [ 
+                  { 
+                    "binding_name": "#loading_bar_percentage", 
+                    "binding_name_override": "#clip_ratio",
+                    "binding_type": "global"
+                  } 
                 ]
-              }
+              } 
             }
           ]
         }
       }
+    ]
+  },
+
+  "progress_screen@common.base_screen": {
+    "is_showing_menu": true,
+    "should_steal_mouse": true,
+    "render_game_behind": false,
+    "$screen_bg_content": "common.empty_panel",
+    "controls": [
+      { 
+        "noir_bg": { 
+          "type": "image", 
+          "texture": "textures/ui/white", 
+          "color": [ 0, 0, 0 ], 
+          "size": [ "100%", "100%" ], 
+          "layer": 1 
+        } 
+      },
+      { "content@progress.progress_screen_content": { } }
     ]
   }
 }
