@@ -31,7 +31,7 @@
     "controls": [
       {
       
-"fov_slider@settings_common.option_slider": {
+"fov_slider@common_buttons.premium_option_slider": {
           "$ignored": "($is_holographic and $is_reality_mode and not $is_pregame)",
           "$option_label": "#field_of_view_slider_label",
           "$slider_tts_text_value": "#field_of_view_text_value",
@@ -47,7 +47,7 @@
       },
       {
  
-"hud_opacity_slider@settings_common.option_slider": {
+"hud_opacity_slider@common_buttons.premium_option_slider": {
           "$option_label": "#interface_opacity_slider_label",
           "$slider_name": "interface_opacity",
           "$slider_value_binding_name": "#interface_opacity",
@@ -62,7 +62,7 @@
       },
       {
           
-"splitscreen_hud_opacity_slider@settings_common.option_slider": {
+"splitscreen_hud_opacity_slider@common_buttons.premium_option_slider": {
           "ignored": "(not $can_splitscreen)",
           "$option_label": "#splitscreen_interface_opacity_slider_label",
           "$slider_name": "splitscreen_interface_opacity",
@@ -95,7 +95,7 @@
       },
       {
       
-"fullscreen_toggle@settings_common.option_toggle": {
+"fullscreen_toggle@common_buttons.premium_option_toggle": {
           "$show_fullscreen_toggle": true,
           "visible": "($show_fullscreen_toggle and not $is_holographic)",
           "$option_label": "Fullscreen",
@@ -105,7 +105,7 @@
         }
       },
       {
-        "hide_paperdoll_toggle@settings_common.option_toggle": {
+        "hide_paperdoll_toggle@common_buttons.premium_option_toggle": {
           "$option_label": "Hide Player Renderer",
           "$option_binding_name": "#hide_paperdoll",
           "$option_enabled_binding_name": "#hide_paperdoll_enabled",
@@ -113,7 +113,7 @@
         }
       },
       {
-        "option_toggle_screen_animations@settings_common.option_toggle": {
+        "option_toggle_screen_animations@common_buttons.premium_option_toggle": {
           "ignored": "($is_holographic)",
           "$option_label": "Screen Animations",
           "$option_binding_name": "#screen_animations",
@@ -140,7 +140,7 @@
         }
       },
       {
-        "auto_save_icon_toggle@settings_common.option_toggle": {
+        "auto_save_icon_toggle@common_buttons.premium_option_toggle": {
           "$option_label": "Show auto-save icon",
           "$option_binding_name": "#show_auto_save_icon",
           "$option_enabled_binding_name": "#show_auto_save_icon_enabled",
@@ -148,7 +148,7 @@
         }
       },
       {
-        "outline_selection_toggle@settings_common.option_toggle": {
+        "outline_selection_toggle@common_buttons.premium_option_toggle": {
           "ignored": "($is_holographic)",
           "$option_label": "Outline Selection",
           "$option_binding_name": "#classic_box_selection",
@@ -157,7 +157,7 @@
         }
       },
       {
-        "option_toggle_15@settings_common.option_toggle": {
+        "option_toggle_15@common_buttons.premium_option_toggle": {
           "ignored": "(not $is_holographic)",
           "$option_label": "options.vr_classic_box_selection",
           "$option_binding_name": "#vr_classic_box_selection",
@@ -166,7 +166,7 @@
         }
       },
       {
-        "player_names_toggle@settings_common.option_toggle": {
+        "player_names_toggle@common_buttons.premium_option_toggle": {
           "$option_label": "Show Player Names",
           "$option_binding_name": "#ingame_player_names",
           "$option_enabled_binding_name": "#ingame_player_names_enabled",
@@ -174,7 +174,7 @@
         }
       },
       {
-        "splitscreen_player_names_toggle@settings_common.option_toggle": {
+        "splitscreen_player_names_toggle@common_buttons.premium_option_toggle": {
           "ignored": "(not $can_splitscreen)",
           "$option_label": "options.splitscreenIngamePlayerNames",
           "$option_binding_name": "#splitscreen_ingame_player_names",
@@ -183,7 +183,7 @@
         }
       },
       {
-        "view_bobbing_toggle@settings_common.option_toggle": {
+        "view_bobbing_toggle@common_buttons.premium_option_toggle": {
           "ignored": "($is_holographic and $is_reality_mode and not $is_pregame)",
           "$option_label": "View Bobbing",
           "$option_binding_name": "#view_bobbing",
@@ -192,7 +192,7 @@
         }
       },
       {
-        "field_of_view_toggle@settings_common.option_toggle": {
+        "field_of_view_toggle@common_buttons.premium_option_toggle": {
           "$option_label": "Field of view is affected by gameplay",
           "$option_binding_name": "#field_of_view_toggle",
           "$option_enabled_binding_name": "#field_of_view_toggle_enabled",
@@ -212,7 +212,7 @@
         }
       },
       {
-        "gui_scale_slider@settings_common.option_slider": {
+        "gui_scale_slider@common_buttons.premium_option_slider": {
           "ignored": "($is_holographic)",
           "$option_label": "#gui_scale_slider_label",
           "$slider_name": "gui_scale",

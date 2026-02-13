@@ -42,7 +42,7 @@
       },
 	   
       {
-        "brightness_slider@settings_common.option_slider": {
+        "brightness_slider@common_buttons.premium_option_slider": {
           "ignored": "($is_holographic)",
           "$option_label": "#gamma_slider_label",
           "$slider_name": "gamma",
@@ -58,7 +58,7 @@
       },
   
     {
-      "render_distance_slider@settings_common.option_slider": {
+      "render_distance_slider@common_buttons.premium_option_slider": {
           "ignored": "($is_holographic)",
           "$option_label": "#render_distance_slider_label",
           "$slider_name": "render_distance",
@@ -74,7 +74,7 @@
       },
   
     {
-      "particle_render_distance_slider@settings_common.option_slider": {
+      "particle_render_distance_slider@common_buttons.premium_option_slider": {
           "ignored": "($is_holographic)",
           "$option_label": "#particle_render_distance_slider_label",
           "$slider_name": "particle_render_distance",
@@ -89,7 +89,7 @@
       },
   
     {
-      "max_framerate_slider@settings_common.option_slider": {
+      "max_framerate_slider@common_buttons.premium_option_slider": {
           "ignored": "($is_holographic)",
           "$option_label": "#max_framerate_slider_label",
           "$slider_name": "max_framerate",
@@ -106,7 +106,7 @@
       },
       {
       
-"msaa_slider@settings_common.option_slider": {
+"msaa_slider@common_buttons.premium_option_slider": {
           "ignored": "($is_holographic or $is_win10_arm)",
           "$option_label": "#msaa_slider_label",
           "$slider_name": "msaa",
@@ -128,7 +128,7 @@
         }
       },
 	  {
-        "option_toggle_0_0@settings_common.option_toggle": {
+        "option_toggle_0_0@common_buttons.premium_option_toggle": {
           "$option_label": "options.dev_enableDebugUI",
           "$option_binding_name": "#dev_enable_debug_ui",
           "$option_enabled_binding_name": "#dev_enable_debug_ui_enabled",
@@ -136,7 +136,7 @@
         }
       },
       {
-         "fancy_clouds_toggle_9@settings_common.option_toggle": {
+         "fancy_clouds_toggle_9@common_buttons.premium_option_toggle": {
           "$option_label": "Fancy Sky",
           "$option_binding_name": "#fancy_skies",
           "$option_enabled_binding_name": "#fancy_skies_enabled",
@@ -144,7 +144,7 @@
         }
       },
       {
-        "render_clouds_toggle_10@settings_common.option_toggle": {
+        "render_clouds_toggle_10@common_buttons.premium_option_toggle": {
           "$option_label": "Render Clouds",
           "$option_binding_name": "#render_clouds",
           "$option_enabled_binding_name": "#fancy_skies",
@@ -153,7 +153,7 @@
       },
    
     {
-      "fancy_bubbles_toggle@settings_common.option_toggle": {
+      "fancy_bubbles_toggle@common_buttons.premium_option_toggle": {
           "$option_label": "Fancy Bubbles",
           "$option_binding_name": "#bubble_particles",
           "$option_enabled_binding_name": "#bubble_particles_enabled",
@@ -161,7 +161,7 @@
         }
       },
       {
-        "smooth_lighting_toggle_11@settings_common.option_toggle": {
+        "smooth_lighting_toggle_11@common_buttons.premium_option_toggle": {
           "ignored": "($is_holographic)",
           "$option_label": "Smooth Lighting",
           "$option_binding_name": "#smooth_lighting",
@@ -170,7 +170,7 @@
         }
       },
       {
-        "vr_smooth_lighting_toggle@settings_common.option_toggle": {
+        "vr_smooth_lighting_toggle@common_buttons.premium_option_toggle": {
           "ignored": "(not $is_holographic)",
           "$option_label": "Smooth Lighting",
           "$option_binding_name": "#vr_smooth_lighting",
@@ -179,7 +179,7 @@
         }
       },
       {
-        "graphics_toggle_12@settings_common.option_toggle": {
+        "graphics_toggle_12@common_buttons.premium_option_toggle": {
           "ignored": "($is_holographic)",
           "$option_label": "Fancy Graphics",
           "$option_binding_name": "#graphics_toggle",
@@ -188,7 +188,7 @@
         }
       },
       {
-        "fancy_leaves_toggle@settings_common.option_toggle": {
+        "fancy_leaves_toggle@common_buttons.premium_option_toggle": {
           "$option_label": "Fancy Leaves",
           "$option_binding_name": "#transparent_leaves",
           "$option_enabled_binding_name": "#transparent_leaves_enabled",
@@ -197,7 +197,7 @@
       },
       {
      
-"vr_fancy_leaves_toggle@settings_common.option_toggle": {
+"vr_fancy_leaves_toggle@common_buttons.premium_option_toggle": {
           "ignored": "(not $is_holographic)",
           "$option_label": "Fancy Leaves",
           "$option_binding_name": "#vr_transparent_leaves",
@@ -207,7 +207,7 @@
       },
    
     {
-        "texel_anti_aliasing_toggle@settings_common.option_toggle": {
+        "texel_anti_aliasing_toggle@common_buttons.premium_option_toggle": {
           "$option_label": "Text Anti-Aliasing",
           "$option_binding_name": "#texel_aa",
           "$option_enabled_binding_name": "#texel_aa_enabled",
