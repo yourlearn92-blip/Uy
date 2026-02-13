@@ -229,11 +229,10 @@
             {
               "binding_name": "#gui_scale_visible",
               "binding_name_override": "#visible"
-             }
             }
           ]
         }
       }
     ]
-  },
-
+  }
+}
