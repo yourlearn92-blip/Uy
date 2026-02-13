@@ -207,8 +207,7 @@
       },
    
     {
-     
-"texel_anti_aliasing_toggle@settings_common.option_toggle": {
+        "texel_anti_aliasing_toggle@settings_common.option_toggle": {
           "$option_label": "Text Anti-Aliasing",
           "$option_binding_name": "#texel_aa",
           "$option_enabled_binding_name": "#texel_aa_enabled",
@@ -216,12 +215,10 @@
           "bindings": [
             {
               "binding_name": "#show_texel_aa"
-             }
             }
           ]
-        },
-		  
-	  
+        }
       }
     ]
-  },
+  }
+}
