@@ -1,0 +1,8 @@
+{
+  "namespace": "common_buttons_concept",
+
+  "purple_button@common_buttons.primary_button": {
+    // Inherits from primary_button which inherits from simple_button
+    // Used for Realms subscription and management buttons
+  }
+}
