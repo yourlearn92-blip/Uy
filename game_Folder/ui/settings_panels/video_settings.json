@@ -1,25 +1,16 @@
-//Code gotten from VanillaBedrockResourcePack original settings_panels - Noir Theme Applied//
+//Code gotten from  VanillaBedrockResourcePack original settings_panels.//
 {
   "namespace": "video_settings",
 
-// Video Settings Button & Section - Noir Styled
+// Video Settings Button & Section
   "video_button@settings_common.section_toggle_base": {
     "$toggle_view_binding_name": "graphics_button_toggle",
     "$glyph_texture": "textures/glyphs/video_glyph",
     "$glyph_color_texture": "textures/glyphs/video_glyph_color",
     "$glyph_size": [ 17, 17 ],
     "$button_text": "Graphics",
-    "$button_color": "$color_main",
-    "$button_text_color": "$color_text_main",
-    "$toggle_button_background": {
-      "type": "image",
-      "texture": "$button_texture_default",
-      "nineslice_size": "$button_nineslice",
-      "color": "$color_main",
-      "alpha": "$button_alpha_default"
-    },
     "$toggle_property_bag": {
-      "#panel_title": "§fVideo Settings"
+      "#panel_title": "Video Settings"
     }
   },
     
@@ -46,7 +37,6 @@
           "$dropdown_name": "vsync_dropdown",
           "$options_dropdown_toggle_label_binding": "#vsync_dropdown_toggle_label",
           "$option_enabled_binding_name": "#vsync_dropdown_enabled",
-          "$label_color": "$color_text_main",
           "$dropdown_scroll_content_size": [ "100%", "200%" ]
         }
       },
@@ -58,8 +48,6 @@
           "$slider_name": "gamma",
           "$slider_value_binding_name": "#gamma",
           "$option_enabled_binding_name": "#gamma_enabled",
-          "$slider_control": "common_buttons.premium_slider",
-          "$label_color": "$color_text_main",
           "$focus_override_up": "FOCUS_OVERRIDE_STOP",
           "$label_bindings": [
             {
@@ -77,8 +65,6 @@
           "$slider_value_binding_name": "#render_distance",
           "$option_enabled_binding_name": "#render_distance_enabled",
           "$slider_steps_binding_name": "#render_distance_steps",
-          "$slider_control": "common_buttons.premium_slider",
-          "$label_color": "$color_text_main",
           "$label_bindings": [
             {
               "binding_name": "#render_distance_slider_label"
@@ -94,8 +80,6 @@
           "$slider_name": "particle_render_distance",
           "$slider_value_binding_name": "#particle_render_distance",
           "$option_enabled_binding_name": "#particle_render_distance_enabled",
-          "$slider_control": "common_buttons.premium_slider",
-          "$label_color": "$color_text_main",
           "$label_bindings": [
             {
               "binding_name": "#particle_render_distance_slider_label"
@@ -113,8 +97,6 @@
           "$slider_tts_text_value": "#max_framerate_text_value",
           "$option_enabled_binding_name": "#max_framerate_enabled",
           "$slider_steps_binding_name": "#max_framerate_steps",
-          "$slider_control": "common_buttons.premium_slider",
-          "$label_color": "$color_text_main",
           "$label_bindings": [
             {
               "binding_name": "$option_label"
@@ -132,8 +114,6 @@
           "$slider_tts_text_value": "#msaa_text_value",
           "$option_enabled_binding_name": "#msaa_enabled",
           "$slider_steps_binding_name": "#msaa_steps",
-          "$slider_control": "common_buttons.premium_slider",
-          "$label_color": "$color_text_main",
           "$label_bindings": [
             {
               "binding_name": "$option_label"
@@ -152,8 +132,6 @@
           "$option_label": "options.dev_enableDebugUI",
           "$option_binding_name": "#dev_enable_debug_ui",
           "$option_enabled_binding_name": "#dev_enable_debug_ui_enabled",
-          "$toggle_control": "common_buttons.premium_toggle",
-          "$label_color": "$color_text_main",
           "$toggle_name": "dev_enable_debug_ui"
         }
       },
@@ -162,8 +140,6 @@
           "$option_label": "Fancy Sky",
           "$option_binding_name": "#fancy_skies",
           "$option_enabled_binding_name": "#fancy_skies_enabled",
-          "$toggle_control": "common_buttons.premium_toggle",
-          "$label_color": "$color_text_main",
           "$toggle_name": "fancy_skies"
         }
       },
@@ -172,8 +148,6 @@
           "$option_label": "Render Clouds",
           "$option_binding_name": "#render_clouds",
           "$option_enabled_binding_name": "#fancy_skies",
-          "$toggle_control": "common_buttons.premium_toggle",
-          "$label_color": "$color_text_main",
           "$toggle_name": "render_clouds"
         }
       },
@@ -183,8 +157,6 @@
           "$option_label": "Fancy Bubbles",
           "$option_binding_name": "#bubble_particles",
           "$option_enabled_binding_name": "#bubble_particles_enabled",
-          "$toggle_control": "common_buttons.premium_toggle",
-          "$label_color": "$color_text_main",
           "$toggle_name": "bubble_particles"
         }
       },
@@ -194,8 +166,6 @@
           "$option_label": "Smooth Lighting",
           "$option_binding_name": "#smooth_lighting",
           "$option_enabled_binding_name": "#smooth_lighting_enabled",
-          "$toggle_control": "common_buttons.premium_toggle",
-          "$label_color": "$color_text_main",
           "$toggle_name": "smooth_lighting"
         }
       },
@@ -205,8 +175,6 @@
           "$option_label": "Smooth Lighting",
           "$option_binding_name": "#vr_smooth_lighting",
           "$option_enabled_binding_name": "#vr_smooth_lighting_enabled",
-          "$toggle_control": "common_buttons.premium_toggle",
-          "$label_color": "$color_text_main",
           "$toggle_name": "vr_smooth_lighting"
         }
       },
@@ -216,8 +184,6 @@
           "$option_label": "Fancy Graphics",
           "$option_binding_name": "#graphics_toggle",
           "$option_enabled_binding_name": "#graphics_toggle_enabled",
-          "$toggle_control": "common_buttons.premium_toggle",
-          "$label_color": "$color_text_main",
           "$toggle_name": "graphics_toggle"
         }
       },
@@ -226,8 +192,6 @@
           "$option_label": "Fancy Leaves",
           "$option_binding_name": "#transparent_leaves",
           "$option_enabled_binding_name": "#transparent_leaves_enabled",
-          "$toggle_control": "common_buttons.premium_toggle",
-          "$label_color": "$color_text_main",
           "$toggle_name": "transparent_leaves"
         }
       },
@@ -238,8 +202,6 @@
           "$option_label": "Fancy Leaves",
           "$option_binding_name": "#vr_transparent_leaves",
           "$option_enabled_binding_name": "#vr_transparent_leaves_enabled",
-          "$toggle_control": "common_buttons.premium_toggle",
-          "$label_color": "$color_text_main",
           "$toggle_name": "vr_transparent_leaves"
         }
       },
@@ -250,8 +212,6 @@
           "$option_label": "Text Anti-Aliasing",
           "$option_binding_name": "#texel_aa",
           "$option_enabled_binding_name": "#texel_aa_enabled",
-          "$toggle_control": "common_buttons.premium_toggle",
-          "$label_color": "$color_text_main",
           "$toggle_name": "texel_aa",
           "bindings": [
             {

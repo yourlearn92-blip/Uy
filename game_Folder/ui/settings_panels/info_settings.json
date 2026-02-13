@@ -2,25 +2,16 @@
 {
   "namespace": "info_settings",
 
-// Info Button & Section - Noir Styled
+// Info Button & Section
   
   "info_button@settings_common.section_toggle_base": {
     "$toggle_view_binding_name": "info_button_toggle",
     "$glyph_texture": "textures/glyphs/info_glyph",
     "$glyph_color_texture": "textures/glyphs/info_glyph_color",
     "$glyph_size": [ 17, 17 ],
-    "$button_text": "Lunar Client",
-    "$button_color": "$color_main",
-    "$button_text_color": "$color_text_main",
-    "$toggle_button_background": {
-      "type": "image",
-      "texture": "$button_texture_default",
-      "nineslice_size": "$button_nineslice",
-      "color": "$color_main",
-      "alpha": "$button_alpha_default"
-    },
+    "$button_text": "Wolf Client",
     "$toggle_property_bag": {
-      "#panel_title": "§f Lunar Client"
+      "#panel_title": "§fWolf Client"
     }
   },
     
@@ -43,7 +34,7 @@
           "type": "image",
 	        "anchor_from": "center",
           "anchor_to": "center",
-          "offset": [ 0, 0 ],
+          "offset": [ 0,0 ],
           "texture": "textures/changelog/info",
           "layer": 3,
           "uv": [ 0, 0 ],
@@ -54,107 +45,78 @@
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
           "font_size":"large",
-          "shadow": true,
-          "color": "$color_cyan",
-          "text":"§fLUNAR CLIENT V5"
+          "shadow":true,
+          "text":"§fWOLF CLIENT V1"
         }
       },
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
-          "shadow": true,
-          "color": "$color_text_main",
           "text":"§lCREDITS: "
         }
       },
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
-          "shadow": true,
-          "color": "$color_text_main",
-          "text":"its file ui by astral v2.1(owner lightX) "
+          "text":"its file ui v1.0(owner TLWTryoo) "
         }
       },
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
-          "shadow": true,
-          "color": "$color_text_main",
           "text":"§f._."
         }
       },
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
-          "shadow": true,
-          "color": "$color_text_main",
-          "text":"§fOptions by BlueBerryShake (owner blackpanter)"
+          "text":"§fNot Joined yet(alone developer"
         }
       },
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
-          "shadow": true,
-          "color": "$color_text_main",
           "text":"
-§fClient By Mr.SlufrosT"
+§fClient By Mr.Tryoo"
         }
       },
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
-          "shadow": true,
-          "color": "$color_text_main",
           "text":""
         }
       },
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
-          "shadow": true,
-          "color": "$color_text_main",
-          "text":"§fthis just give good subpacks and fps boost purposes for (MCPE)."
+          "text":"§fthis just give good ui and fps boost purposes for (MCPE)."
         }
       },
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
-          "shadow": true,
-          "color": "$color_text_main",
           "text":""
         }
       },
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
-          "shadow": true,
-          "color": "$color_cyan",
           "text":"§fFeatures:"
         }
       },
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
-          "shadow": true,
-          "color": "$color_text_main",
           "text":"§f1.Fix annoying info "
         }
       },
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
-          "shadow": true,
-          "color": "$color_text_main",
-          "text":"§f2.animation will add for lunar client (soon)."
+          "text":"§f2.animation will add for wolf client? (maybe..)."
         }
       },
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
-          "shadow": true,
-          "color": "$color_text_main",
-          "text":"§f3.sky (will add)"
+          "text":"§f3.sky (maybe)"
         }
       },
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
-          "shadow": true,
-          "color": "$color_text_main",
-          "text":"§f4.realesed pack pvp lunar client"
+          "text":"§f4.realesed pack pvp wolf client"
         }
       },
       {
         "selector_group_lable_1@settings_common.selector_group_label":{
-          "shadow": true,
-          "color": "$color_text_main",
           "text":"§f5.Update panorama
 §f5.add new ui
 §f6.for pvp
