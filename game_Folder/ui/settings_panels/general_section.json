@@ -1984,12 +1984,11 @@
         }
       },
       {
-        "left_button@common_buttons_concept.purple_button": {
+        "left_button_panel": {
+          "type": "panel",
           "size": [ "48%", "100%" ],
           "max_size": [ 60, "100%" ],
-          "$button_content": "general_section.left_button_label",
-          "$pressed_button_name": "$left_pressed_button_name",
-          "$left_button_bindings|default": [
+          "bindings": [
             {
               "binding_name": "#left_button_visible",
               "binding_name_override": "#visible",
@@ -2002,7 +2001,14 @@
               "binding_type": "collection_details"
             }
           ],
-          "bindings": "$left_button_bindings"
+          "controls": [
+            {
+              "left_button@common_buttons_concept.purple_button": {
+                "$button_content": "general_section.left_button_label",
+                "$pressed_button_name": "$left_pressed_button_name"
+              }
+            }
+          ]
         }
       },
       {
@@ -2012,15 +2018,22 @@
         }
       },
       {
-        "right_button@common_buttons_concept.purple_button": {
+        "right_button_panel": {
+          "type": "panel",
           "size": [ "48%", "100%" ],
           "max_size": [ 60, "100%" ],
-          "$button_content": "general_section.right_button_label",
-          "$pressed_button_name": "$right_pressed_button_name",
           "bindings": [
             {
               "binding_collection_name": "$realm_collection_name",
               "binding_type": "collection_details"
+            }
+          ],
+          "controls": [
+            {
+              "right_button@common_buttons_concept.purple_button": {
+                "$button_content": "general_section.right_button_label",
+                "$pressed_button_name": "$right_pressed_button_name"
+              }
             }
           ]
         }
