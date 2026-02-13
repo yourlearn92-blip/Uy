@@ -172,7 +172,7 @@
         }
       },
       {
-        "option_content_file_log@common_buttons.premium_option_toggle": {
+        "option_content_file_log@settings_common.option_toggle": {
           "$option_label": "options.content_log_file",
           "$option_binding_name": "#content_log_file",
           "$option_enabled_binding_name": "#content_log_file_enabled",
@@ -180,7 +180,7 @@
         }
       },
       {
-        "option_content_gui_log@common_buttons.premium_option_toggle": {
+        "option_content_gui_log@settings_common.option_toggle": {
           "$option_label": "options.content_log_gui",
           "$option_binding_name": "#content_log_gui",
           "$option_enabled_binding_name": "#content_log_gui_enabled",
@@ -287,7 +287,7 @@
         }
       },
       {
-        "use_sso@common_buttons.premium_option_toggle": {
+        "use_sso@settings_common.option_toggle": {
           "ignored": "(not $education_edition)",
           "$option_label": "options.adUseSingleSignOn",
           "$option_binding_name": "#ad_use_single_sign_on",
@@ -343,7 +343,7 @@
         }
       },
       {
-        "auto_update_enabled_toggle@common_buttons.premium_option_toggle": {
+        "auto_update_enabled_toggle@settings_common.option_toggle": {
           "ignored": "((not $is_console and not $is_settopbox and not $win10_edition and not $osx_edition) or $nx_os)",
           "$option_label": "options.autoUpdateEnabled",
           "$option_binding_name": "#auto_update_enabled",
@@ -351,7 +351,7 @@
         }
       },
       {
-        "cross_platform_enabled_toggle@common_buttons.premium_option_toggle": {
+        "cross_platform_enabled_toggle@settings_common.option_toggle": {
           "ignored": "(not $supports_cross_platform_play_toggle)",
           "$option_label": "options.crossPlatformPlay",
           "$option_binding_name": "#crossplatform_toggle",
@@ -360,7 +360,7 @@
         }
       },
       {
-        "option_toggle_0@common_buttons.premium_option_toggle": {
+        "option_toggle_0@settings_common.option_toggle": {
           "ignored": "($is_console or $is_settopbox or $win10_edition or $osx_edition or $education_edition_china)",
           "$option_label": "options.allowCellularData",
           "$option_binding_name": "#allow_cellular_data",
@@ -369,7 +369,7 @@
         }
       },
       {
-        "option_toggle_1@common_buttons.premium_option_toggle": {
+        "option_toggle_1@settings_common.option_toggle": {
           "$option_label": "options.websocketEncryption",
           "$option_binding_name": "#websocket_encryption",
           "$option_enabled_binding_name": "#websocket_encryption_enabled",
@@ -1162,7 +1162,7 @@
     }
   },
 
-  "advanced_video_options_toggle@common_buttons.premium_option_toggle_control": {
+  "advanced_video_options_toggle@settings_common.option_toggle_control": {
     "$toggle_name": "advanced_video_options",
     "$toggle_state_binding_name": "#advanced_video_options"
   },
@@ -1184,7 +1184,7 @@
     "controls": [
 
       {
-        "brightness_slider@common_buttons.premium_option_slider": {
+        "brightness_slider@settings_common.option_slider": {
           "ignored": "($is_holographic)",
           "$option_label": "#gamma_slider_label",
           "$slider_name": "gamma",
@@ -1200,7 +1200,7 @@
         }
       },
       {
-        "vr_brightness_slider@common_buttons.premium_option_slider": {
+        "vr_brightness_slider@settings_common.option_slider": {
           "ignored": "(not $is_holographic)",
           "$option_label": "#vr_gamma_slider_label",
           "$slider_name": "vr_gamma",
@@ -1227,7 +1227,7 @@
         }
       },
       {
-        "fullscreen_toggle@common_buttons.premium_option_toggle": {
+        "fullscreen_toggle@settings_common.option_toggle": {
           "$show_fullscreen_toggle|default": true,
           "visible": "($show_fullscreen_toggle and not $is_holographic)",
           "$option_label": "options.fullscreen",
@@ -1237,7 +1237,7 @@
         }
       },
       {
-        "option_toggle_hidehand@common_buttons.premium_option_toggle": {
+        "option_toggle_hidehand@settings_common.option_toggle": {
           "ignored": "($is_holographic)",
           "$option_label": "options.hidehand",
           "$option_binding_name": "#hide_hand",
@@ -1246,7 +1246,7 @@
         }
       },
       {
-        "option_toggle_vrhidehand@common_buttons.premium_option_toggle": {
+        "option_toggle_vrhidehand@settings_common.option_toggle": {
           "ignored": "(not $is_holographic)",
           "$option_label": "options.vrHideHand",
           "$option_binding_name": "#vr_hide_hand",
@@ -1255,7 +1255,7 @@
         }
       },
       {
-        "hide_paperdoll_toggle@common_buttons.premium_option_toggle": {
+        "hide_paperdoll_toggle@settings_common.option_toggle": {
           "$option_label": "options.hidepaperdoll",
           "$option_binding_name": "#hide_paperdoll",
           "$option_enabled_binding_name": "#hide_paperdoll_enabled",
@@ -1263,7 +1263,7 @@
         }
       },
       {
-        "option_toggle_hidehud@common_buttons.premium_option_toggle": {
+        "option_toggle_hidehud@settings_common.option_toggle": {
           "ignored": "($is_holographic)",
           "$option_label": "options.hidehud",
           "$option_binding_name": "#hide_hud",
@@ -1272,7 +1272,7 @@
         }
       },
       {
-        "option_toggle_vrhidehud@common_buttons.premium_option_toggle": {
+        "option_toggle_vrhidehud@settings_common.option_toggle": {
           "ignored": "(not $is_holographic)",
           "$option_label": "options.vrHideHud",
           "$option_binding_name": "#vr_hide_hud",
@@ -1281,7 +1281,7 @@
         }
       },
       {
-        "option_toggle_screen_animations@common_buttons.premium_option_toggle": {
+        "option_toggle_screen_animations@settings_common.option_toggle": {
           "ignored": "($is_holographic)",
           "$option_label": "options.screenAnimations",
           "$option_binding_name": "#screen_animations",
@@ -1296,7 +1296,7 @@
         }
       },
       {
-        "hud_opacity_slider@common_buttons.premium_option_slider": {
+        "hud_opacity_slider@settings_common.option_slider": {
           "$option_label": "#interface_opacity_slider_label",
           "$slider_name": "interface_opacity",
           "$slider_value_binding_name": "#interface_opacity",
@@ -1310,7 +1310,7 @@
         }
       },
       {
-        "splitscreen_hud_opacity_slider@common_buttons.premium_option_slider": {
+        "splitscreen_hud_opacity_slider@settings_common.option_slider": {
           "ignored": "(not $can_splitscreen)",
           "$option_label": "#splitscreen_interface_opacity_slider_label",
           "$slider_name": "splitscreen_interface_opacity",
@@ -1342,7 +1342,7 @@
         }
       },
       {
-        "fov_slider@common_buttons.premium_option_slider": {
+        "fov_slider@settings_common.option_slider": {
           "$ignored": "($is_holographic and $is_reality_mode and not $is_pregame)",
           "$option_label": "#field_of_view_slider_label",
           "$slider_tts_text_value": "#field_of_view_text_value",
@@ -1369,7 +1369,7 @@
         }
       },
       {
-        "auto_save_icon_toggle@common_buttons.premium_option_toggle": {
+        "auto_save_icon_toggle@settings_common.option_toggle": {
           "$option_label": "options.showautosaveicon",
           "$option_binding_name": "#show_auto_save_icon",
           "$option_enabled_binding_name": "#show_auto_save_icon_enabled",
@@ -1377,7 +1377,7 @@
         }
       },
       {
-        "outline_selection_toggle@common_buttons.premium_option_toggle": {
+        "outline_selection_toggle@settings_common.option_toggle": {
           "ignored": "($is_holographic)",
           "$option_label": "options.classic_box_selection",
           "$option_binding_name": "#classic_box_selection",
@@ -1386,7 +1386,7 @@
         }
       },
       {
-        "option_toggle_15@common_buttons.premium_option_toggle": {
+        "option_toggle_15@settings_common.option_toggle": {
           "ignored": "(not $is_holographic)",
           "$option_label": "options.vr_classic_box_selection",
           "$option_binding_name": "#vr_classic_box_selection",
@@ -1395,7 +1395,7 @@
         }
       },
       {
-        "player_names_toggle@common_buttons.premium_option_toggle": {
+        "player_names_toggle@settings_common.option_toggle": {
           "$option_label": "options.ingamePlayerNames",
           "$option_binding_name": "#ingame_player_names",
           "$option_enabled_binding_name": "#ingame_player_names_enabled",
@@ -1403,7 +1403,7 @@
         }
       },
       {
-        "splitscreen_player_names_toggle@common_buttons.premium_option_toggle": {
+        "splitscreen_player_names_toggle@settings_common.option_toggle": {
           "ignored": "(not $can_splitscreen)",
           "$option_label": "options.splitscreenIngamePlayerNames",
           "$option_binding_name": "#splitscreen_ingame_player_names",
@@ -1412,7 +1412,7 @@
         }
       },
       {
-        "view_bobbing_toggle@common_buttons.premium_option_toggle": {
+        "view_bobbing_toggle@settings_common.option_toggle": {
           "ignored": "($is_holographic and $is_reality_mode and not $is_pregame)",
           "$option_label": "options.viewBobbing",
           "$option_binding_name": "#view_bobbing",
@@ -1421,7 +1421,7 @@
         }
       },
       {
-        "fancy_leaves_toggle@common_buttons.premium_option_toggle": {
+        "fancy_leaves_toggle@settings_common.option_toggle": {
           "ignored": "($pocket_edition or $education_ios or $is_holographic)",
           "$option_label": "options.transparentleaves",
           "$option_binding_name": "#transparent_leaves",
@@ -1430,7 +1430,7 @@
         }
       },
       {
-        "vr_fancy_leaves_toggle@common_buttons.premium_option_toggle": {
+        "vr_fancy_leaves_toggle@settings_common.option_toggle": {
           "ignored": "(not $is_holographic)",
           "$option_label": "options.transparentleaves",
           "$option_binding_name": "#vr_transparent_leaves",
@@ -1439,7 +1439,7 @@
         }
       },
       {
-        "fancy_bubbles_toggle@common_buttons.premium_option_toggle": {
+        "fancy_bubbles_toggle@settings_common.option_toggle": {
           "$option_label": "options.bubbleparticles",
           "$option_binding_name": "#bubble_particles",
           "$option_enabled_binding_name": "#bubble_particles_enabled",
@@ -1447,7 +1447,7 @@
         }
       },
       {
-        "render_clouds_toggle@common_buttons.premium_option_toggle": {
+        "render_clouds_toggle@settings_common.option_toggle": {
           "$option_label": "options.renderclouds",
           "$option_binding_name": "#render_clouds",
           "$option_enabled_binding_name": "#render_clouds_enabled",
@@ -1455,7 +1455,7 @@
         }
       },
       {
-        "fancy_clouds_toggle@common_buttons.premium_option_toggle": {
+        "fancy_clouds_toggle@settings_common.option_toggle": {
           "$option_label": "options.fancyskies",
           "$option_binding_name": "#fancy_skies",
           "$option_enabled_binding_name": "#fancy_skies_enabled",
@@ -1463,7 +1463,7 @@
         }
       },
       {
-        "smooth_lighting_toggle@common_buttons.premium_option_toggle": {
+        "smooth_lighting_toggle@settings_common.option_toggle": {
           "ignored": "($is_holographic)",
           "$option_label": "options.smooth_lighting",
           "$option_binding_name": "#smooth_lighting",
@@ -1472,7 +1472,7 @@
         }
       },
       {
-        "vr_smooth_lighting_toggle@common_buttons.premium_option_toggle": {
+        "vr_smooth_lighting_toggle@settings_common.option_toggle": {
           "ignored": "(not $is_holographic)",
           "$option_label": "options.smooth_lighting",
           "$option_binding_name": "#vr_smooth_lighting",
@@ -1481,7 +1481,7 @@
         }
       },
       {
-        "graphics_toggle@common_buttons.premium_option_toggle": {
+        "graphics_toggle@settings_common.option_toggle": {
           "ignored": "($is_holographic)",
           "$option_label": "options.graphics",
           "$option_binding_name": "#graphics_toggle",
@@ -1490,7 +1490,7 @@
         }
       },
       {
-        "rendering_profile_option_slider@common_buttons.premium_option_slider": {
+        "rendering_profile_option_slider@settings_common.option_slider": {
           "ignored": true,
           "$option_label": "#rendering_profile_slider_label",
           "$slider_name": "rendering_profile",
@@ -1506,7 +1506,7 @@
         }
       },
       {
-        "field_of_view_toggle@common_buttons.premium_option_toggle": {
+        "field_of_view_toggle@settings_common.option_toggle": {
           "$option_label": "options.fov.toggle",
           "$option_binding_name": "#field_of_view_toggle",
           "$option_enabled_binding_name": "#field_of_view_toggle_enabled",
@@ -1534,7 +1534,7 @@
                       "size": [ "100% - 6px", "100%c - 4px" ],
                       "controls": [
                         {
-                          "atmospherics_toggle@common_buttons.premium_option_toggle": {
+                          "atmospherics_toggle@settings_common.option_toggle": {
                             "$option_label": "options.atmosphericsEnable",
                             "$option_binding_name": "#atmospherics",
                             "$option_enabled_binding_name": "#atmospherics_enabled",
@@ -1542,7 +1542,7 @@
                           }
                         },
                         {
-                          "edge_highlight_toggle@common_buttons.premium_option_toggle": {
+                          "edge_highlight_toggle@settings_common.option_toggle": {
                             "$option_label": "options.edgeHighlightEnable",
                             "$option_binding_name": "#edge_highlight",
                             "$option_enabled_binding_name": "#edge_highlight_enabled",
@@ -1550,7 +1550,7 @@
                           }
                         },
                         {
-                          "bloom_toggle@common_buttons.premium_option_toggle": {
+                          "bloom_toggle@settings_common.option_toggle": {
                             "$option_label": "options.bloomEnable",
                             "$option_binding_name": "#bloom",
                             "$option_enabled_binding_name": "#bloom_enabled",
@@ -1558,7 +1558,7 @@
                           }
                         },
                         {
-                          "terrain_shadows_toggle@common_buttons.premium_option_toggle": {
+                          "terrain_shadows_toggle@settings_common.option_toggle": {
                             "$option_label": "options.terrainShadowsEnable",
                             "$option_binding_name": "#terrain_shadows",
                             "$option_enabled_binding_name": "#terrain_shadows_enabled",
@@ -1566,7 +1566,7 @@
                           }
                         },
                         {
-                          "super_fancy_water_toggle@common_buttons.premium_option_toggle": {
+                          "super_fancy_water_toggle@settings_common.option_toggle": {
                             "$option_label": "options.superFancyWaterEnable",
                             "$option_binding_name": "#super_fancy_water",
                             "$option_enabled_binding_name": "#super_fancy_water_enabled",
@@ -1595,7 +1595,7 @@
         }
       },
       {
-        "gui_scale_slider@common_buttons.premium_option_slider": {
+        "gui_scale_slider@settings_common.option_slider": {
           "ignored": "($is_holographic)",
           "$option_label": "#gui_scale_slider_label",
           "$slider_name": "gui_scale",
@@ -1617,7 +1617,7 @@
         }
       },
       {
-        "render_distance_slider@common_buttons.premium_option_slider": {
+        "render_distance_slider@settings_common.option_slider": {
           "ignored": "($is_holographic)",
           "$option_label": "#render_distance_slider_label",
           "$slider_name": "render_distance",
@@ -1633,7 +1633,7 @@
         }
       },
       {
-        "vr_render_distance_slider@common_buttons.premium_option_slider": {
+        "vr_render_distance_slider@settings_common.option_slider": {
           "ignored": "(not $is_holographic)",
           "$option_label": "#vr_render_distance_slider_label",
           "$slider_name": "vr_render_distance",
@@ -1649,7 +1649,7 @@
         }
       },
       {
-        "particle_render_distance_slider@common_buttons.premium_option_slider": {
+        "particle_render_distance_slider@settings_common.option_slider": {
           "ignored": "($pocket_edition or $is_holographic or $education_ios)",
           "$option_label": "#particle_render_distance_slider_label",
           "$slider_name": "particle_render_distance",
@@ -1664,7 +1664,7 @@
         }
       },
       {
-        "vr_particle_render_distance_slider@common_buttons.premium_option_slider": {
+        "vr_particle_render_distance_slider@settings_common.option_slider": {
           "ignored": "($pocket_edition or not $is_holographic)",
           "$option_label": "#vr_particle_render_distance_slider_label",
           "$slider_name": "vr_particle_render_distance",
@@ -1679,7 +1679,7 @@
         }
       },
       {
-        "max_framerate_slider@common_buttons.premium_option_slider": {
+        "max_framerate_slider@settings_common.option_slider": {
           "ignored": "($is_publish)",
           "$option_label": "#max_framerate_slider_label",
           "$slider_name": "max_framerate",
@@ -1695,7 +1695,7 @@
         }
       },
       {
-        "msaa_slider@common_buttons.premium_option_slider": {
+        "msaa_slider@settings_common.option_slider": {
           "ignored": "($is_holographic or $is_win10_arm)",
           "$option_label": "#msaa_slider_label",
           "$slider_name": "msaa",
@@ -1717,7 +1717,7 @@
         }
       },
       {
-        "vr_msaa_slider@common_buttons.premium_option_slider": {
+        "vr_msaa_slider@settings_common.option_slider": {
           "ignored": "(not $is_holographic or $is_win10_arm)",
           "$option_label": "#vr_msaa_slider_label",
           "$slider_name": "vr_msaa",
@@ -1739,7 +1739,7 @@
         }
       },
       {
-        "texel_anti_aliasing_toggle@common_buttons.premium_option_toggle": {
+        "texel_anti_aliasing_toggle@settings_common.option_toggle": {
           "$option_label": "options.texelAA",
           "$option_binding_name": "#texel_aa",
           "$option_enabled_binding_name": "#texel_aa_enabled",
@@ -1753,7 +1753,7 @@
         }
       },
       {
-        "vr_3d_rendering@common_buttons.premium_option_toggle": {
+        "vr_3d_rendering@settings_common.option_toggle": {
           "ignored": "(not $gear_vr or not $is_holographic)",
           "$option_label": "options.3DRendering",
           "$option_binding_name": "#vr_3d_rendering",
@@ -1762,7 +1762,7 @@
         }
       },
       {
-        "vr_mirror_texture@common_buttons.premium_option_toggle": {
+        "vr_mirror_texture@settings_common.option_toggle": {
           "ignored": "($gear_vr or not $is_holographic)",
           "$option_label": "options.vrMirrorTexture",
           "$option_binding_name": "#vr_mirror_texture",
@@ -2607,7 +2607,7 @@
     ],
     "controls": [
       {
-        "option_toggle_0@common_buttons.premium_option_toggle": {
+        "option_toggle_0@settings_common.option_toggle": {
           "$option_label": "options.comfortControls",
           "$option_binding_name": "#comfort_controls",
           "$option_enabled_binding_name": "#comfort_controls_enabled",
@@ -2615,7 +2615,7 @@
         }
       },
       {
-        "option_toggle_1@common_buttons.premium_option_toggle": {
+        "option_toggle_1@settings_common.option_toggle": {
           "$option_label": "options.ShowComfortSelectScreen",
           "$option_binding_name": "#show_comfort_select_screen",
           "$option_enabled_binding_name": "#show_comfort_select_screen_enabled",
@@ -2623,7 +2623,7 @@
         }
       },
       {
-        "option_toggle_2@common_buttons.premium_option_toggle": {
+        "option_toggle_2@settings_common.option_toggle": {
           "ignored": "(not $is_living_room_mode and not $is_pregame)",
           "$option_label": "options.vrLivingRoomCursorCentered",
           "$option_binding_name": "#vr_living_room_cursor_centered",
@@ -2638,7 +2638,7 @@
           "size": [ "100%", "100%c" ],
           "controls": [
             {
-              "option_toggle_0@common_buttons.premium_option_toggle": {
+              "option_toggle_0@settings_common.option_toggle": {
                 "$option_label": "options.vrHMDdisplacement",
                 "$option_binding_name": "#vr_hmd_displacement",
                 "$option_enabled_binding_name": "#vr_hmd_displacement_enabled",
@@ -2652,7 +2652,7 @@
               }
             },
             {
-              "option_toggle_1@common_buttons.premium_option_toggle": {
+              "option_toggle_1@settings_common.option_toggle": {
                 "$option_label": "options.vrLinearJump",
                 "$option_binding_name": "#vr_linear_jump",
                 "$option_enabled_binding_name": "#vr_linear_jump_enabled",
@@ -2660,7 +2660,7 @@
               }
             },
             {
-              "option_toggle_2@common_buttons.premium_option_toggle": {
+              "option_toggle_2@settings_common.option_toggle": {
                 "$option_label": "options.vrLinearMotion",
                 "$option_binding_name": "#vr_linear_motion",
                 "$option_enabled_binding_name": "#vr_linear_motion_enabled",
@@ -2668,7 +2668,7 @@
               }
             },
             {
-              "option_toggle_3@common_buttons.premium_option_toggle": {
+              "option_toggle_3@settings_common.option_toggle": {
                 "$option_label": "options.stickyMining",
                 "$option_binding_name": "#sticky_mining",
                 "$option_enabled_binding_name": "#sticky_mining_enabled",
@@ -2677,7 +2677,7 @@
             },
 
             {
-              "option_toggle_4@common_buttons.premium_option_toggle": {
+              "option_toggle_4@settings_common.option_toggle": {
                 "ignored": "($is_mobile_vr)",
                 "$option_label": "options.stickyMiningHand",
                 "$option_binding_name": "#sticky_mining_hand",
@@ -2687,7 +2687,7 @@
             },
 
             {
-              "option_toggle_5@common_buttons.premium_option_toggle": {
+              "option_toggle_5@settings_common.option_toggle": {
                 "$option_label": "options.vrHudDrifts",
                 "$option_binding_name": "#vr_hud_drifts",
                 "$option_enabled_binding_name": "#vr_hud_drifts_enabled",
@@ -2700,7 +2700,7 @@
               }
             },
             {
-              "option_toggle_6@common_buttons.premium_option_toggle": {
+              "option_toggle_6@settings_common.option_toggle": {
                 "$option_label": "options.vrHeadSteering",
                 "$option_binding_name": "#vr_head_steering",
                 "$option_enabled_binding_name": "#vr_head_steering_enabled",
@@ -2708,7 +2708,7 @@
               }
             },
             {
-              "option_toggle_7@common_buttons.premium_option_toggle": {
+              "option_toggle_7@settings_common.option_toggle": {
                 "$option_label": "options.StutterTurn",
                 "$option_binding_name": "#stutter_turn",
                 "$option_enabled_binding_name": "#stutter_turn_enabled",
@@ -2716,7 +2716,7 @@
               }
             },
             {
-              "option_toggle_8@common_buttons.premium_option_toggle": {
+              "option_toggle_8@settings_common.option_toggle": {
                 "$option_label": "options.StutterConstantAngleOrTime",
                 "$option_binding_name": "#stutter_constant_angle_or_time",
                 "$option_enabled_binding_name": "#stutter_constant_angle_or_time_enabled",
@@ -2724,7 +2724,7 @@
               }
             },
             {
-              "option_toggle_9@common_buttons.premium_option_toggle": {
+              "option_toggle_9@settings_common.option_toggle": {
                 "$option_label": "options.StutterTurnSound",
                 "$option_binding_name": "#stutter_turn_sound",
                 "$option_enabled_binding_name": "#stutter_turn_sound_enabled",
@@ -2732,7 +2732,7 @@
               }
             },
             {
-              "option_toggle_10@common_buttons.premium_option_toggle": {
+              "option_toggle_10@settings_common.option_toggle": {
                 "ignored": "($is_mobile_vr and $is_publish)",
                 "$option_label": "options.vrRollTurning",
                 "$option_binding_name": "#vr_roll_turn",
@@ -2741,7 +2741,7 @@
               }
             },
             {
-              "option_toggle_11@common_buttons.premium_option_toggle": {
+              "option_toggle_11@settings_common.option_toggle": {
                 "ignored": "($is_mobile_vr)",
                 "$option_label": "options.vrHandControlsItem",
                 "$option_binding_name": "#vr_hand_controls_item",
@@ -2750,7 +2750,7 @@
               }
             },
             {
-              "option_toggle_12@common_buttons.premium_option_toggle": {
+              "option_toggle_12@settings_common.option_toggle": {
                 "ignored": "($is_mobile_vr)",
                 "$option_label": "options.vrHandControlsHUD",
                 "$option_binding_name": "#vr_hand_controls_hud",
@@ -2759,7 +2759,7 @@
               }
             },
             {
-              "option_toggle_13@common_buttons.premium_option_toggle": {
+              "option_toggle_13@settings_common.option_toggle": {
                 "ignored": "($is_mobile_vr)",
                 "$option_label": "options.vrHandPointer",
                 "$option_binding_name": "#vr_hand_pointer",
@@ -2768,7 +2768,7 @@
               }
             },
             {
-              "option_toggle_14@common_buttons.premium_option_toggle": {
+              "option_toggle_14@settings_common.option_toggle": {
                 "ignored": "($is_mobile_vr)",
                 "$option_label": "options.vrHandsVisible",
                 "$option_binding_name": "#vr_hands_visible",
@@ -2810,7 +2810,7 @@
     ],
     "controls": [
       {
-        "option_toggle0@common_buttons.premium_option_toggle": {
+        "option_toggle0@settings_common.option_toggle": {
           "ignored": "(not $text_to_speech_supported or not $platform_tts_exists)",
           "$option_label": "options.enableAutoPlatformTextToSpeech",
           "$option_binding_name": "#enable_auto_text_to_speech",
@@ -2819,7 +2819,7 @@
         }
       },
       {
-        "option_toggle1@common_buttons.premium_option_toggle": {
+        "option_toggle1@settings_common.option_toggle": {
           "ignored": "(not $text_to_speech_supported)",
           "$option_label": "options.enableUITextToSpeech",
           "$option_binding_name": "#enable_ui_text_to_speech",
@@ -2828,7 +2828,7 @@
         }
       },
       {
-        "option_toggle2@common_buttons.premium_option_toggle": {
+        "option_toggle2@settings_common.option_toggle": {
           "ignored": "(not $text_to_speech_supported)",
           "$option_label": "options.enableChatTextToSpeech",
           "$option_binding_name": "#enable_chat_text_to_speech",
@@ -2837,7 +2837,7 @@
         }
       },
       {
-        "option_toggle3@common_buttons.premium_option_toggle": {
+        "option_toggle3@settings_common.option_toggle": {
           "ignored": "(not $text_to_speech_supported)",
           "$option_label": "options.enableOpenChatMessage",
           "$option_binding_name": "#enable_open_chat_message",
@@ -2887,7 +2887,7 @@
     ],
     "controls": [
       /*{// Uncomment when the new sound settings are added
-        "option_slider_0@common_buttons.premium_option_slider": {
+        "option_slider_0@settings_common.option_slider": {
           "$option_label": "#master_slider_label",
           "$slider_name": "master_volume",
           "$slider_value_binding_name": "#master_volume",
@@ -2902,7 +2902,7 @@
       },
       */
       {
-        "option_slider_1@common_buttons.premium_option_slider": {
+        "option_slider_1@settings_common.option_slider": {
           "$option_label": "#music_volume_slider_label",
           "$slider_name": "music_volume",
           "$slider_value_binding_name": "#music_volume",
@@ -2917,7 +2917,7 @@
         }
       },
       {
-        "option_slider_2@common_buttons.premium_option_slider": {
+        "option_slider_2@settings_common.option_slider": {
           "$option_label": "#sound_volume_slider_label",
           "$slider_name": "sound_volume",
           "$slider_value_binding_name": "#sound_volume",
@@ -2942,7 +2942,7 @@
         }
       } /*,// Uncomment when the new sound settings are added
       {
-        "option_slider_3@common_buttons.premium_option_slider": {
+        "option_slider_3@settings_common.option_slider": {
           "$option_label": "#weather_slider_label",
           "$slider_name": "weather_volume",
           "$slider_value_binding_name": "#weather_volume",
@@ -2956,7 +2956,7 @@
         }
       },
       {
-        "option_slider_4@common_buttons.premium_option_slider": {
+        "option_slider_4@settings_common.option_slider": {
           "$option_label": "#hostile_creature_slider_label",
           "$slider_name": "hostile_creature_volume",
           "$slider_value_binding_name": "#hostile_creature_volume",
@@ -2970,7 +2970,7 @@
         }
       },
       {
-        "option_slider_5@common_buttons.premium_option_slider": {
+        "option_slider_5@settings_common.option_slider": {
           "$option_label": "#player_slider_label",
           "$slider_name": "player_volume",
           "$slider_value_binding_name": "#player_volume",
@@ -2985,7 +2985,7 @@
         }
       },
       {
-        "option_slider_6@common_buttons.premium_option_slider": {
+        "option_slider_6@settings_common.option_slider": {
           "$option_label": "#jukebox_and_note_block_slider_label",
           "$slider_name": "jukebox_and_note_block_volume",
           "$slider_value_binding_name": "#jukebox_and_note_block_volume",
@@ -2999,7 +2999,7 @@
         }
       },
       {
-        "option_slider_7@common_buttons.premium_option_slider": {
+        "option_slider_7@settings_common.option_slider": {
           "$option_label": "#block_slider_label",
           "$slider_name": "block_volume",
           "$slider_value_binding_name": "#block_volume",
@@ -3013,7 +3013,7 @@
         }
       },
       {
-        "option_slider_8@common_buttons.premium_option_slider": {
+        "option_slider_8@settings_common.option_slider": {
           "$option_label": "#friendly_creature_slider_label",
           "$slider_name": "friendly_creature_volume",
           "$slider_value_binding_name": "#friendly_creature_volume",
@@ -3027,7 +3027,7 @@
         }
       },
       {
-        "option_slider_9@common_buttons.premium_option_slider": {
+        "option_slider_9@settings_common.option_slider": {
           "$option_label": "#environment_slider_label",
           "$slider_name": "environment_volume",
           "$slider_value_binding_name": "#environment_volume",
@@ -3233,7 +3233,7 @@
         }
       },
       {
-        "display_override_datetime_option_toggle@common_buttons.premium_option_toggle": {
+        "display_override_datetime_option_toggle@settings_common.option_toggle": {
           "$option_label": "options.dev_displayOverrideDatetime",
           "$option_binding_name": "#dev_display_override_datetime",
           "$option_enabled_binding_name": "#dev_display_override_datetime_enabled",
@@ -3241,7 +3241,7 @@
         }
       },
       {
-        "option_toggle_date_override@common_buttons.premium_option_toggle": {
+        "option_toggle_date_override@settings_common.option_toggle": {
           "$option_label": "options.dev_useOverrideDate",
           "$option_binding_name": "#dev_use_override_date",
           "$option_enabled_binding_name": "#dev_use_override_date_enabled",
@@ -3268,7 +3268,7 @@
           "$enabled": true,
           "controls": [
             {
-              "load_override_date_option_toggle@common_buttons.premium_option_toggle": {
+              "load_override_date_option_toggle@settings_common.option_toggle": {
                 "$option_label": "options.dev_loadOverrideDate",
                 "$option_binding_name": "#dev_load_override_date",
                 "$option_enabled_binding_name": "#dev_load_override_date_enabled",
@@ -3433,7 +3433,7 @@
           "size": [ "90%", "100%c" ],
           "controls": [
             {
-              "option_toggle_treatment_override@common_buttons.premium_option_toggle": {
+              "option_toggle_treatment_override@settings_common.option_toggle": {
                 "$option_label": "options.dev_experimentalTreatment",
                 "$option_binding_name": "#dev_show_override_treatments",
                 "$option_enabled_binding_name": "#dev_show_override_treatments_enabled",
@@ -3889,7 +3889,7 @@
         }
       },
       {
-        "automation_repeat_failures_only_toggle@common_buttons.premium_option_toggle": {
+        "automation_repeat_failures_only_toggle@settings_common.option_toggle": {
           "$option_label": "Enable Rerunning Failed Tests",
           "$option_binding_name": "#automation_repeat_failures_only",
           "$option_enabled_binding_name": "#automation_repeat_failures_only",
@@ -3913,7 +3913,7 @@
         }
       },
       {
-        "automation_functional_test_block_input_toggle@common_buttons.premium_option_toggle": {
+        "automation_functional_test_block_input_toggle@settings_common.option_toggle": {
           "$option_label": "Disable User Input While Running Functional Tests",
           "$option_binding_name": "#automation_functional_test_block_input",
           "$option_enabled_binding_name": "#automation_functional_test_block_input_enabled",
@@ -3936,7 +3936,7 @@
     }
   },
 
-  "feature_toggle@common_buttons.premium_option_toggle": {
+  "feature_toggle@settings_common.option_toggle": {
     "$line_size": [ "100%", "100%c - 9px" ],
     "$option_label": "#text",
     "$toggle_tts_header_binding_type": "collection",
@@ -4000,7 +4000,7 @@
         }
       },
       /*{// Uncomment when the debug UI option is added
-        "option_toggle_0_0@common_buttons.premium_option_toggle": {
+        "option_toggle_0_0@settings_common.option_toggle": {
           "$option_label": "options.dev_enableDebugUI",
           "$option_binding_name": "#dev_enable_debug_ui",
           "$option_enabled_binding_name": "#dev_enable_debug_ui_enabled",
@@ -4008,7 +4008,7 @@
         }
       },*/
       {
-        "option_toggle_default_font_override@common_buttons.premium_option_toggle": {
+        "option_toggle_default_font_override@settings_common.option_toggle": {
           "$option_label": "options.dev_toggle_default_font_overrides",
           "$option_binding_name": "#dev_toggle_default_font_overrides",
           "$toggle_name": "dev_toggle_default_font_overrides",
@@ -4034,7 +4034,7 @@
         }
       },
       {
-        "option_toggle_0_1@common_buttons.premium_option_toggle": {
+        "option_toggle_0_1@settings_common.option_toggle": {
           "$option_label": "options.dev_renderBoundingBox",
           "$option_binding_name": "#dev_render_bounding_box",
           "$option_enabled_binding_name": "#dev_render_bounding_box_enabled",
@@ -4042,7 +4042,7 @@
         }
       },
       {
-        "option_toggle_0_2@common_buttons.premium_option_toggle": {
+        "option_toggle_0_2@settings_common.option_toggle": {
           "$option_label": "find mobs",
           "$option_binding_name": "#dev_find_mobs",
           "$option_enabled_binding_name": "#dev_find_mobs_enabled",
@@ -4050,7 +4050,7 @@
         }
       },
       {
-        "option_slider_0@common_buttons.premium_option_slider": {
+        "option_slider_0@settings_common.option_slider": {
           "$option_label": "#dev_render_attach_pos_slider_label",
           "$slider_name": "dev_render_attach_pos",
           "$slider_value_binding_name": "#dev_render_attach_pos",
@@ -4065,7 +4065,7 @@
         }
       },
       {
-        "option_toggle_3@common_buttons.premium_option_toggle": {
+        "option_toggle_3@settings_common.option_toggle": {
           "$option_label": "options.dev_renderPaths",
           "$option_binding_name": "#dev_render_paths",
           "$option_enabled_binding_name": "#dev_render_paths_enabled",
@@ -4073,7 +4073,7 @@
         }
       },
       {
-        "option_toggle_4@common_buttons.premium_option_toggle": {
+        "option_toggle_4@settings_common.option_toggle": {
           "$option_label": "options.dev_renderGoalState",
           "$option_binding_name": "#dev_render_goal_state",
           "$option_enabled_binding_name": "#dev_render_goal_state_enabled",
@@ -4081,7 +4081,7 @@
         }
       },
       {
-        "option_toggle_5@common_buttons.premium_option_toggle": {
+        "option_toggle_5@settings_common.option_toggle": {
           "$option_label": "options.dev_resetClientId",
           "$option_binding_name": "#dev_reset_client_id",
           "$option_enabled_binding_name": "#dev_reset_client_id_enabled",
@@ -4089,7 +4089,7 @@
         }
       },
       {
-        "option_toggle_6@common_buttons.premium_option_toggle": {
+        "option_toggle_6@settings_common.option_toggle": {
           "$option_label": "options.dev_showChunkMap",
           "$option_binding_name": "#dev_show_chunk_map",
           "$option_enabled_binding_name": "#dev_show_chunk_map_enabled",
@@ -4097,7 +4097,7 @@
         }
       },
       {
-        "option_toggle_server_chunk_map@common_buttons.premium_option_toggle": {
+        "option_toggle_server_chunk_map@settings_common.option_toggle": {
           "$option_label": "options.dev_showServerChunkMap",
           "$option_binding_name": "#dev_show_server_chunk_map",
           "$option_enabled_binding_name": "#dev_show_server_chunk_map_enabled",
@@ -4107,7 +4107,7 @@
 
 
       {
-        "option_toggle_disable_render_terrain@common_buttons.premium_option_toggle": {
+        "option_toggle_disable_render_terrain@settings_common.option_toggle": {
           "$option_label": "options.dev_disableRenderTerrain",
           "$option_binding_name": "#dev_disable_render_terrain",
           "$option_enabled_binding_name": "#dev_disable_render_terrain_enabled",
@@ -4115,7 +4115,7 @@
         }
       },
       {
-        "option_toggle_disable_render_entities@common_buttons.premium_option_toggle": {
+        "option_toggle_disable_render_entities@settings_common.option_toggle": {
           "$option_label": "options.dev_disableRenderEntities",
           "$option_binding_name": "#dev_disable_render_entities",
           "$option_enabled_binding_name": "#dev_disable_render_entities_enabled",
@@ -4123,7 +4123,7 @@
         }
       },
       {
-        "option_toggle_disable_render_blockentities@common_buttons.premium_option_toggle": {
+        "option_toggle_disable_render_blockentities@settings_common.option_toggle": {
           "$option_label": "options.dev_disableRenderBlockEntities",
           "$option_binding_name": "#dev_disable_render_blockentities",
           "$option_enabled_binding_name": "#dev_disable_render_blockentities_enabled",
@@ -4131,7 +4131,7 @@
         }
       },
       {
-        "option_toggle_disable_render_particles@common_buttons.premium_option_toggle": {
+        "option_toggle_disable_render_particles@settings_common.option_toggle": {
           "$option_label": "options.dev_disableRenderParticles",
           "$option_binding_name": "#dev_disable_render_particles",
           "$option_enabled_binding_name": "#dev_disable_render_particles_enabled",
@@ -4139,7 +4139,7 @@
         }
       },
       {
-        "option_toggle_disable_render_sky@common_buttons.premium_option_toggle": {
+        "option_toggle_disable_render_sky@settings_common.option_toggle": {
           "$option_label": "options.dev_disableRenderSky",
           "$option_binding_name": "#dev_disable_render_sky",
           "$option_enabled_binding_name": "#dev_disable_render_sky_enabled",
@@ -4147,7 +4147,7 @@
         }
       },
       {
-        "option_toggle_disable_render_weather@common_buttons.premium_option_toggle": {
+        "option_toggle_disable_render_weather@settings_common.option_toggle": {
           "$option_label": "options.dev_disableRenderWeather",
           "$option_binding_name": "#dev_disable_render_weather",
           "$option_enabled_binding_name": "#dev_disable_render_weather_enabled",
@@ -4155,7 +4155,7 @@
         }
       },
       {
-        "option_toggle_disable_render_hud@common_buttons.premium_option_toggle": {
+        "option_toggle_disable_render_hud@settings_common.option_toggle": {
           "$option_label": "options.dev_disableRenderHud",
           "$option_binding_name": "#dev_disable_render_hud",
           "$option_enabled_binding_name": "#dev_disable_render_hud_enabled",
@@ -4163,7 +4163,7 @@
         }
       },
       {
-        "option_toggle_disable_render_item_in_hand@common_buttons.premium_option_toggle": {
+        "option_toggle_disable_render_item_in_hand@settings_common.option_toggle": {
           "$option_label": "options.dev_disableRenderItemInHand",
           "$option_binding_name": "#dev_disable_render_item_in_hand",
           "$option_enabled_binding_name": "#dev_disable_render_item_in_hand_enabled",
@@ -4185,7 +4185,7 @@
         }
       },
       {
-        "option_toggle_build_info@common_buttons.premium_option_toggle": {
+        "option_toggle_build_info@settings_common.option_toggle": {
           "$option_label": "options.dev_showBuildInfo",
           "$option_binding_name": "#dev_show_build_info",
           "$option_enabled_binding_name": "#dev_show_build_info_enabled",
@@ -4193,7 +4193,7 @@
         }
       },
       {
-        "option_toggle_assertions_debug_break@common_buttons.premium_option_toggle": {
+        "option_toggle_assertions_debug_break@settings_common.option_toggle": {
           "$option_label": "options.dev_assertions_debug_break",
           "$option_binding_name": "#dev_assertions_debug_break",
           "$option_enabled_binding_name": "#dev_assertions_debug_break_enabled",
@@ -4201,7 +4201,7 @@
         }
       },
       {
-        "option_toggle_assertions_show_dialog@common_buttons.premium_option_toggle": {
+        "option_toggle_assertions_show_dialog@settings_common.option_toggle": {
           "$option_label": "options.dev_assertions_show_dialog",
           "$option_binding_name": "#dev_assertions_show_dialog",
           "$option_enabled_binding_name": "#dev_assertions_show_dialog_enabled",
@@ -4209,7 +4209,7 @@
         }
       },
       {
-        "option_perf_turtle@common_buttons.premium_option_toggle": {
+        "option_perf_turtle@settings_common.option_toggle": {
           "$option_label": "options.perf_turtle",
           "$option_binding_name": "#perf_turtle",
           "$option_enabled_binding_name": "#perf_turtle_enabled",
@@ -4217,7 +4217,7 @@
         }
       },
       {
-        "option_toggle_dev_console_button_0@common_buttons.premium_option_toggle": {
+        "option_toggle_dev_console_button_0@settings_common.option_toggle": {
           "$option_label": "options.dev_showDevConsoleButton",
           "$option_binding_name": "#dev_show_dev_console_button",
           "$option_enabled_binding_name": "#dev_show_dev_console_button_enabled",
@@ -4225,7 +4225,7 @@
         }
       },
       {
-        "option_toggle_ad_debug_panel@common_buttons.premium_option_toggle": {
+        "option_toggle_ad_debug_panel@settings_common.option_toggle": {
           "ignored": "(not $education_edition)",
           "$option_label": "options.dev_ad_show_debug_panel",
           "$option_binding_name": "#show_ad_debug_panel_button",
@@ -4234,7 +4234,7 @@
         }
       },
       {
-        "ad_token_refresh_threshold@common_buttons.premium_option_slider": {
+        "ad_token_refresh_threshold@settings_common.option_slider": {
           "ignored": "(not $education_edition)",
           "$option_label": "#ad_token_refresh_threshold_slider_label",
           "$slider_name": "ad_token_refresh_threshold",
@@ -4250,7 +4250,7 @@
         }
       },
       {
-        "option_toggle_dev_mixer_interactive@common_buttons.premium_option_toggle": {
+        "option_toggle_dev_mixer_interactive@settings_common.option_toggle": {
           "$option_label": "options.dev_enableMixerInteractive",
           "$option_binding_name": "#dev_enable_mixer_interactive",
           "$option_enabled_binding_name": "#dev_enable_mixer_interactive_enabled",
@@ -4258,7 +4258,7 @@
         }
       },
       {
-        "option_toggle_dev_show_tcui_replacement@common_buttons.premium_option_toggle": {
+        "option_toggle_dev_show_tcui_replacement@settings_common.option_toggle": {
           "$option_label": "options.dev_show_tcui_replacement",
           "$option_binding_name": "#dev_show_tcui_replacement",
           "$option_enabled_binding_name": "#dev_show_tcui_replacement_enabled",
@@ -4266,7 +4266,7 @@
         }
       },
       {
-        "option_toggle_7@common_buttons.premium_option_toggle": {
+        "option_toggle_7@settings_common.option_toggle": {
           "$option_label": "options.dev_enableProfiler",
           "$option_binding_name": "#dev_enable_profiler",
           "$option_enabled_binding_name": "#dev_enable_profiler_enabled",
@@ -4274,7 +4274,7 @@
         }
       },
       {
-        "option_toggle_newparticlesystem@common_buttons.premium_option_toggle": {
+        "option_toggle_newparticlesystem@settings_common.option_toggle": {
           "$option_label": "options.dev_newParticleSystem",
           "$option_binding_name": "#dev_newParticleSystem",
           "$option_enabled_binding_name": "#dev_newParticleSystem_enabled",
@@ -4282,7 +4282,7 @@
         }
       },
       {
-        "option_toggle_8@common_buttons.premium_option_toggle": {
+        "option_toggle_8@settings_common.option_toggle": {
           "$option_label": "options.dev_achievementsAlwaysEnabled",
           "$option_binding_name": "#dev_achievements_always_enabled",
           "$option_enabled_binding_name": "#dev_achievements_always_enabled_enabled",
@@ -4290,7 +4290,7 @@
         }
       },
       {
-        "option_toggle_game_tip@common_buttons.premium_option_toggle": {
+        "option_toggle_game_tip@settings_common.option_toggle": {
           "$option_label": "options.dev_game_tip",
           "enabled": "($is_pregame)",
           "$option_binding_name": "#dev_game_tip",
@@ -4299,7 +4299,7 @@
         }
       },
       {
-        "option_toggle_10@common_buttons.premium_option_toggle": {
+        "option_toggle_10@settings_common.option_toggle": {
           "$option_label": "options.dev_useIPv6Only",
           "$option_binding_name": "#dev_use_ipv6_only",
           "$option_enabled_binding_name": "#dev_use_ipv6_only_enabled",
@@ -4307,7 +4307,7 @@
         }
       },
       {
-        "dev_disable_client_blob_cache_toggle@common_buttons.premium_option_toggle": {
+        "dev_disable_client_blob_cache_toggle@settings_common.option_toggle": {
           "$option_label": "options.dev_disable_client_blob_cache",
           "$option_binding_name": "#dev_disable_client_blob_cache",
           "$option_enabled_binding_name": "#dev_disable_client_blob_cache_enabled",
@@ -4315,7 +4315,7 @@
         }
       },
       {
-        "dev_force_client_blob_cache_toggle@common_buttons.premium_option_toggle": {
+        "dev_force_client_blob_cache_toggle@settings_common.option_toggle": {
           "$option_label": "options.dev_force_client_blob_cache",
           "$option_binding_name": "#dev_force_client_blob_cache",
           "$option_enabled_binding_name": "#dev_force_client_blob_cache_enabled",
@@ -4334,7 +4334,7 @@
         }
       },
       {
-        "dev_show_latency_graph_toggle@common_buttons.premium_option_toggle": {
+        "dev_show_latency_graph_toggle@settings_common.option_toggle": {
           "$option_label": "options.dev_show_latency_graph",
           "$option_binding_name": "#dev_show_latency_graph",
           "$option_enabled_binding_name": "#dev_show_latency_graph_enabled",
@@ -4342,7 +4342,7 @@
         }
       },
       {
-        "option_toggle_12@common_buttons.premium_option_toggle": {
+        "option_toggle_12@settings_common.option_toggle": {
           "$option_label": "options.dev_useRetailXboxSandbox",
           "$option_binding_name": "#dev_use_retail_xbox_sandbox",
           "$option_enabled_binding_name": "#dev_use_retail_xbox_sandbox_enabled",
@@ -4356,7 +4356,7 @@
         "date_options_panel@general_section.date_options_panel": {}
       },
       {
-        "option_toggle_display_marketplace_document_id@common_buttons.premium_option_toggle": {
+        "option_toggle_display_marketplace_document_id@settings_common.option_toggle": {
           "$option_label": "options.dev_displayMarketplaceDocumentId",
           "$option_binding_name": "#dev_show_doc_id",
           "$option_enabled_binding_name": "#dev_show_doc_id_enabled",
@@ -4370,7 +4370,7 @@
           "orientation": "vertical",
           "controls": [
             {
-              "option_version_override@common_buttons.premium_option_toggle": {
+              "option_version_override@settings_common.option_toggle": {
                 "$option_label": "Xforge Client Version Override",
                 "$option_binding_name": "#dev_use_version_override",
                 "$option_enabled_binding_name": "#dev_use_version_override_enabled",
@@ -4390,7 +4390,7 @@
           "orientation": "vertical",
           "controls": [
             {
-              "option_toggle_treatment_override@common_buttons.premium_option_toggle": {
+              "option_toggle_treatment_override@settings_common.option_toggle": {
                 "$option_label": "options.dev_displayTreatmentsPanel",
                 "$option_binding_name": "#dev_display_treatments_panel",
                 "$option_enabled_binding_name": "#dev_display_treatments_panel_enabled",
@@ -4404,7 +4404,7 @@
         }
       },
       {
-        "option_toggle_13@common_buttons.premium_option_toggle": {
+        "option_toggle_13@settings_common.option_toggle": {
           "$option_label": "options.dev_createRealmWithoutPurchase",
           "$option_binding_name": "#dev_create_realm_without_purchase",
           "$option_enabled_binding_name": "#dev_create_realm_without_purchase_enabled",
@@ -4412,7 +4412,7 @@
         }
       },
       {
-        "multithreaded_rendering_toggle@common_buttons.premium_option_toggle": {
+        "multithreaded_rendering_toggle@settings_common.option_toggle": {
           "$option_label": "options.dev_multithreadedRendering",
           "$option_binding_name": "#multithreaded_rendering",
           "$option_enabled_binding_name": "#multithreaded_rendering_enabled",
@@ -4426,7 +4426,7 @@
         }
       },
       {
-        "async_texture_loads_toggle@common_buttons.premium_option_toggle": {
+        "async_texture_loads_toggle@settings_common.option_toggle": {
           "$option_label": "options.dev_asyncTextureLoads",
           "$option_binding_name": "#async_texture_loads",
           "$option_enabled_binding_name": "#async_texture_loads_enabled",
@@ -4440,7 +4440,7 @@
         }
       },
       {
-        "show_async_missing_texture_toggle@common_buttons.premium_option_toggle": {
+        "show_async_missing_texture_toggle@settings_common.option_toggle": {
           "$option_label": "options.dev_showAsyncMissingTexture",
           "$option_binding_name": "#async_missing_texture",
           "$option_enabled_binding_name": "#async_missing_texture_enabled",
@@ -4454,7 +4454,7 @@
         }
       },
       {
-        "gfx_max_dequeued_textures_per_frame_slider@common_buttons.premium_option_slider": {
+        "gfx_max_dequeued_textures_per_frame_slider@settings_common.option_slider": {
           "$option_label": "#gfx_max_dequeued_textures_per_frame_slider_label",
           "$slider_name": "gfx_max_dequeued_textures_per_frame",
           "$slider_value_binding_name": "#gfx_max_dequeued_textures_per_frame",
@@ -4469,7 +4469,7 @@
         }
       },
       {
-        "gfx_texture_load_delay_slider@common_buttons.premium_option_slider": {
+        "gfx_texture_load_delay_slider@settings_common.option_slider": {
           "$option_label": "#gfx_texture_load_delay_slider_label",
           "$slider_name": "gfx_texture_load_delay",
           "$slider_value_binding_name": "#gfx_texture_load_delay",
@@ -4484,7 +4484,7 @@
         }
       },
       {
-        "filewatcher_rendering_toggle@common_buttons.premium_option_toggle": {
+        "filewatcher_rendering_toggle@settings_common.option_toggle": {
           "$option_label": "options.dev_file_watcher",
           "$option_binding_name": "#file_watcher",
           "$option_enabled_binding_name": "#file_watcher_enabled",
@@ -4574,7 +4574,7 @@
         }
       },
       {
-        "enable_coin_debug_switch_toggle@common_buttons.premium_option_toggle": {
+        "enable_coin_debug_switch_toggle@settings_common.option_toggle": {
           "$option_label": "options.dev_switch_coin_debug",
           "$option_binding_name": "#switch_coin_debug",
           "$option_enabled_binding_name": "#switch_coin_debug_enabled",
