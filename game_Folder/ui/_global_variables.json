@@ -4,14 +4,14 @@
   "$wolf_logo_size": [ 180, 90 ],
   "$wolf_glow_alpha": 0.35,
 
-  // --- PRIMARY THEME COLORS ---
+  // --- PRIMARY THEME COLORS (Black & White) ---
   "$color_cyan": [ 1.0, 1.0, 1.0 ],
-  "$color_cyan_secondary": [ 0.2, 0.2, 0.2 ],
+  "$color_cyan_secondary": [ 0.4, 0.4, 0.4 ],
   "$color_white": [ 1.0, 1.0, 1.0 ],
   "$color_text_main": [ 1.0, 1.0, 1.0 ],
-  "$color_cyan_secondary": [ 0.0, 0.8, 0.8 ],
+  "$color_cyan_secondary": [ 0.4, 0.4, 0.4 ],
   "$color_main": [ 1.0, 1.0, 1.0 ],
-  "$color_secondary": [ 0.0, 0.8, 0.8 ],
+  "$color_secondary": [ 0.4, 0.4, 0.4 ],
 
   // --- TRANSPARENCY (GLASS EFFECT) ---
   "$glass_alpha": 0.4,
