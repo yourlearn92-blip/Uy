@@ -186,5 +186,74 @@
     "alpha": "$glass_alpha",
     "nineslice_size": "$button_nineslice",
     "layer": 0
+  },
+
+  // --- ENHANCED PREMIUM TOGGLE WITH LABEL SUPPORT ---
+  "premium_option_toggle": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ "100%", "default" ],
+    "controls": [
+      {
+        "label_control": {
+          "type": "label",
+          "text": "$option_label|default",
+          "color": "$color_text_main",
+          "shadow": true,
+          "size": [ "fill", "default" ]
+        }
+      },
+      {
+        "toggle_control@common_buttons.premium_toggle": {
+          "bindings": [
+            {
+              "binding_name": "$option_binding_name|default",
+              "binding_name_override": "#toggle_state"
+            },
+            {
+              "binding_name": "$option_enabled_binding_name|default",
+              "binding_name_override": "#enabled"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  // --- ENHANCED PREMIUM SLIDER WITH LABEL SUPPORT ---
+  "premium_option_slider": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "size": [ "100%", "default" ],
+    "controls": [
+      {
+        "label_control": {
+          "type": "label",
+          "text": "$option_label|default",
+          "color": "$color_text_main",
+          "shadow": true,
+          "size": [ "100%", "default" ],
+          "bindings": "$label_bindings|default"
+        }
+      },
+      {
+        "slider_control@common_buttons.premium_slider": {
+          "bindings": [
+            {
+              "binding_name": "$slider_value_binding_name|default",
+              "binding_name_override": "#slider_value"
+            },
+            {
+              "binding_name": "$option_enabled_binding_name|default",
+              "binding_name_override": "#enabled"
+            },
+            {
+              "binding_name": "$slider_steps_binding_name|default",
+              "binding_name_override": "#slider_steps"
+            }
+          ]
+        }
+      }
+    ]
   }
 }
